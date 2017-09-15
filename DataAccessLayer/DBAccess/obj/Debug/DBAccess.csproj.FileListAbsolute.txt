@@ -33,3 +33,11 @@ C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\bin\Deb
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csproj.CoreCompileInputs.cache
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb

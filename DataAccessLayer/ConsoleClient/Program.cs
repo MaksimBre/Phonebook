@@ -28,7 +28,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
             {
                
                 Console.WriteLine("= = = = Contacts = = = = =");
-                Console.WriteLine("= id = = Name = = Surname = = Picture = = Date of Birth = =  Phone number = = Phone type = =");
+                Console.WriteLine("= id = = Name = = Picture = = Date of Birth = =  Phone number = = Phone type = =");
                 foreach (Contact contact in phonebook.Contacts.GetAll())
                 {
                    
@@ -36,7 +36,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
                     string dateOfBirth = Equals(contact.DateOfBirth, null) ? "N/A" : contact.DateOfBirth.Value.ToShortDateString();
                     
 
-                   Console.WriteLine($"\n  {contact.Id}    \t{contact.Name}\t {contact.Surname} \t\t {picture}\t  {dateOfBirth}\t    number(s)");
+                   Console.WriteLine($"\n  {contact.Id}    \t{contact.Name}\t {picture}\t  {dateOfBirth}\t    number(s)");
                    
                       ListPhones(phonebook.Phones.GetByContactId(contact.Id));
                     

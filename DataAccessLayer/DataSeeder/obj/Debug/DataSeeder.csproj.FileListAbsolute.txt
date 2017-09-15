@@ -48,3 +48,14 @@ C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\D
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csproj.CoreCompileInputs.cache
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.pdb

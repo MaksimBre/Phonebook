@@ -40,15 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Addresses.cs" />
-    <Compile Include="AddressTypes.cs" />
     <Compile Include="Contacts.cs" />
     <Compile Include="Emails.cs" />
-    <Compile Include="EmailTypes.cs" />
     <Compile Include="Helpers\DBHelper.cs" />
     <Compile Include="Phonebook.cs" />
-    <Compile Include="Phones.cs" />
-    <Compile Include="PhoneTypes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

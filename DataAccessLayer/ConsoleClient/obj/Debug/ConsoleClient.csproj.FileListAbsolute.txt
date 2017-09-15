@@ -51,3 +51,14 @@ C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bi
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csproj.CoreCompileInputs.cache
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb

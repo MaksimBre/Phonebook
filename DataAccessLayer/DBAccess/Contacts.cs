@@ -73,11 +73,10 @@ namespace Phonebook.DataAccessLayer.DBAccess
                 throw new ArgumentNullException("contact", "Valid contact is mandatory!");
 
             using (SqlCommand command = new SqlCommand("INSERT INTO Contacts (Name, Surname, Picture, DateOfBirth) " +
-                                                       "VALUES (@Name, @Surname, @Picture, @DateOfBirth)"+ 
+                                                       "VALUES (@Name, @Picture, @DateOfBirth)"+ 
                                                        "SELECT CAST(SCOPE_IDENTITY() AS int)", connection))
             {
                 command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = contact.Name;
-                command.Parameters.Add("@Surname", SqlDbType.NVarChar).Value = contact.Surname;
                 command.Parameters.Add("@Picture", SqlDbType.Image).Value = contact.Picture.Optional();
                 command.Parameters.Add("@DateOfBirth", SqlDbType.Date).Value = contact.DateOfBirth.Optional();
                 
@@ -91,12 +90,11 @@ namespace Phonebook.DataAccessLayer.DBAccess
                 throw new ArgumentNullException("contact", "Valid contact is mandatory!");
 
             using (SqlCommand command = new SqlCommand("UPDATE Contacts " + 
-                                                       "SET Name, Surname, Picture, DateOfBirth " +
+                                                       "SET Name, Picture, DateOfBirth " +
                                                        "WHERE Id = @Id", connection))
             {
                 command.Parameters.Add("@Id", SqlDbType.Int).Value = contact.Id;
                 command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = contact.Name;
-                command.Parameters.Add("@Surname", SqlDbType.NVarChar).Value = contact.Surname;
                 command.Parameters.Add("@Picture", SqlDbType.Image).Value = contact.Picture.Optional();
                 command.Parameters.Add("@DateOfBirth", SqlDbType.Date).Value = contact.DateOfBirth.Optional();
 
@@ -138,7 +136,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         private Contact CreateContact(IDataReader reader)
         {
-            return new Contact((int)reader["Id"], reader["Name"] as string, reader["Surname"] as string, reader["Picture"] as byte[], reader["DateOfBirth"].DBNullTo<DateTime?>());
+            return new Contact((int)reader["Id"], reader["Name"] as string, reader["Picture"] as byte[], reader["DateOfBirth"].DBNullTo<DateTime?>());
 
 
         }
