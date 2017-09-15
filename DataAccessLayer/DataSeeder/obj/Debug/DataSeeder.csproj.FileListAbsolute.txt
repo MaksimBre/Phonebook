@@ -1,0 +1,50 @@
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe.config
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb

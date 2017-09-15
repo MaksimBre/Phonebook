@@ -1,0 +1,35 @@
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb

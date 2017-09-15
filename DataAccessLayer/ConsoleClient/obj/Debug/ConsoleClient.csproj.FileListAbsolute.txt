@@ -1,0 +1,53 @@
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb
+E:\ProjectV2(with all menagers)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+E:\ProjectV2(with all menagers)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+E:\ProjectV2(with all menagers)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
