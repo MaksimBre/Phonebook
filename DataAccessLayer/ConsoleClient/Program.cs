@@ -10,20 +10,14 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
 {
     class Program
     {
-        public static void ListPhones(IEnumerable<Phone> phone)
-        {
-            foreach (Phone ph in phone)
-            {
-                Console.WriteLine($"\t \t \t \t \t \t \t {ph.Number} \n");
-            }
-            
-        }
-
 
         static void Main(string[] args)
         {
             List<string> numbers = new List<string>();
             List<string> contacts = new List<string>();
+
+            //List<>
+
             using (DBAccess.Phonebook phonebook = new DBAccess.Phonebook(Properties.Settings.Default.PhonebookDbConnection))
             {
                
@@ -37,9 +31,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
                     
 
                    Console.WriteLine($"\n  {contact.Id}    \t{contact.Name}\t {picture}\t  {dateOfBirth}\t    number(s)");
-                   
-                      ListPhones(phonebook.Phones.GetByContactId(contact.Id));
-                    
+                                      
                  }
                           
             }

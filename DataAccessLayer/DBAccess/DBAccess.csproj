@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Contacts.cs" />
     <Compile Include="Emails.cs" />
+    <Compile Include="EmailTypes.cs" />
     <Compile Include="Helpers\DBHelper.cs" />
     <Compile Include="Phonebook.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

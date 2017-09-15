@@ -7,8 +7,8 @@
     <ProjectGuid>{094FC678-EF82-4EDD-BD5D-4509A34674D3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Models</RootNamespace>
-    <AssemblyName>Models</AssemblyName>
+    <RootNamespace>Phonebook.DataAccessLayer.Models</RootNamespace>
+    <AssemblyName>Phonebook.DataAccessLayer.Models</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Contact.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="EmailType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

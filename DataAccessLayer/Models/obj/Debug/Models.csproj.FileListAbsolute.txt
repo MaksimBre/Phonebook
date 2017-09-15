@@ -18,3 +18,8 @@ D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveA
 D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.dll
 D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.dll
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.pdb

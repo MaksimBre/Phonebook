@@ -9,6 +9,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
         private readonly SqlConnection connection;
 
         public Emails Emails { get; set; }
+        public EmailTypes EmailTypes { get; set; }
         public Contacts Contacts { get; set; }
 
         public Phonebook(string connectionString)
@@ -20,6 +21,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
             connection.Open();
 
             Emails = new Emails(connection);
+            EmailTypes = new EmailTypes(connection);
             Contacts = new Contacts(connection);
         }
 

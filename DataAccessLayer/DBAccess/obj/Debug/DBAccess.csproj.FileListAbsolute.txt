@@ -41,3 +41,11 @@ D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAcces
 D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
 D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.dll
 D:\Max\Projects\phonebook\DataAccessLayer\DBAccess\bin\Debug\Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csprojResolveAssemblyReference.cache
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\obj\Debug\DBAccess.csproj.CoreCompileInputs.cache
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\obj\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\DBAccess\bin\Debug\Phonebook.DataAccessLayer.Models.pdb

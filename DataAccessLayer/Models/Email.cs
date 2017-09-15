@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Phonebook.DataAccessLayer.Models
+﻿namespace Phonebook.DataAccessLayer.Models
 {
     public class Email
     {
@@ -8,15 +6,17 @@ namespace Phonebook.DataAccessLayer.Models
         {
         }
 
-        public Email(int contactId, string address, int? typeId = null)
+        public Email(int id,int contactId, string emailAddress, int? typeId = null)
         {
+            Id = id;
             ContactId = contactId;
-            Address = address;
+            EmailAddress = emailAddress;
             TypeId = typeId;
         }
 
+        public int Id { get; set; }
         public int ContactId { get; set; }
-        public string Address { get; set; }
+        public string EmailAddress { get; set; }
         public int? TypeId { get; set; }
     }
 }

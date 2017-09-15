@@ -18,9 +18,26 @@ namespace Phonebook.DataAccessLayer.DBAccess
             this.connection = connection;
         }
 
-       public IEnumerable<Email> GetByContactId(int id)
+       public Email GetById(int id)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM EMails WHERE ContactId = @ContactId", connection))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Emails WHERE Id = @Id", connection))
+            {
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    Email email = new Email();
+                    while (reader.Read())
+                        email = CreateEmail(reader);
+
+                    return email;
+                }
+            }
+        }
+
+        public IEnumerable<Email> GetAllByContactId(int id)
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Emails WHERE ContactId = @ContactId", connection))
             {
                 command.Parameters.Add("@ContactId", SqlDbType.Int).Value = id;
 
@@ -35,19 +52,20 @@ namespace Phonebook.DataAccessLayer.DBAccess
             }
         }
 
-        public void Insert(Email email)
+        public int Insert(Email email)
         {
             if (email == null)
                 throw new ArgumentNullException("email", "Valid email is mandatory!");
 
-            using (SqlCommand command = new SqlCommand("INSERT INTO EMails (ContactId, Address, TypeId) " +
-                                                       "VALUES (@ContactId, @Address, @TypeId)", connection))
+            using (SqlCommand command = new SqlCommand("INSERT INTO Emails (ContactId, EmailAddress, TypeId) " +
+                                                       "VALUES (@ContactId, @EmailAddress, @TypeId) " +
+                                                       "SELECT CAST(SCOPE_IDENTITY() AS int)",connection))
             {
                 command.Parameters.Add("@ContactId", SqlDbType.Int).Value = email.ContactId;
-                command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = email.Address;
+                command.Parameters.Add("@EmailAddress", SqlDbType.NVarChar).Value = email.EmailAddress;
                 command.Parameters.Add("@TypeId", SqlDbType.Int).Value = email.TypeId.Optional();
 
-                command.ExecuteNonQuery();
+               return (int)command.ExecuteScalar();
             }
         }
 
@@ -56,45 +74,24 @@ namespace Phonebook.DataAccessLayer.DBAccess
             if (email == null)
                 throw new ArgumentNullException("email", "Valid email is mandatory!");
 
-            using (SqlCommand command = new SqlCommand("UPDATE EMails " +
-                                                       "SET  Address = @Address, TypeId = @TypeId " +
-                                                       "WHERE ContactId = @ContactId AND Address = @Address", connection))
+            using (SqlCommand command = new SqlCommand("UPDATE Emails " +
+                                                       "SET  EmailAddress = @EmailAddress, TypeId = @TypeId " +
+                                                       "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@ContactId", SqlDbType.Int).Value = email.ContactId;
-                command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = email.Address;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = email.Id;
+                command.Parameters.Add("@EmailAddress", SqlDbType.NVarChar).Value = email.EmailAddress;
                 command.Parameters.Add("@TypeId", SqlDbType.Int).Value = email.TypeId.Optional();
 
                 command.ExecuteNonQuery();
             }
         }
-        public void Update(Email email, string address)
+
+        public void Delete(int id)
         {
-            if (email == null)
-                throw new ArgumentNullException("email", "Valid email is mandatory!");
-
-            using (SqlCommand command = new SqlCommand("UPDATE EMails " +
-                                                       "SET Address = @Adr, TypeId = @TypeId " +
-                                                       "WHERE ContactId = @ContactId AND Address = @Address", connection))
+            using (SqlCommand command = new SqlCommand("DELETE FROM Emails " +
+                                                       "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@ContactId", SqlDbType.Int).Value = email.ContactId;
-                command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = email.Address;
-                command.Parameters.Add("@Adr", SqlDbType.NVarChar).Value = address;   // new value for email address
-                command.Parameters.Add("@TypeId", SqlDbType.Int).Value = email.TypeId.Optional();
-
-                command.ExecuteNonQuery();
-            }
-        }
-        public void Delete(Email email)
-        {
-            if (email == null)
-                throw new ArgumentNullException("email", "Valid email is mandatory!");
-
-            using (SqlCommand command = new SqlCommand("DELETE FROM EMails " +
-                                                       "WHERE ContactId = @ContactId AND Address = @Address", connection))
-            {
-                command.Parameters.Add("@ContactId", SqlDbType.Int).Value = email.ContactId;
-                command.Parameters.Add("@Address", SqlDbType.NVarChar).Value = email.Address;
-               
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
 
                 command.ExecuteNonQuery();
             }
@@ -102,7 +99,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
          
         private Email CreateEmail(IDataReader reader )
         {
-            return new Email((int)reader["ContactId"], reader["Address"] as string, reader["TypeId"].DBNullTo<int?>());
+            return new Email((int)reader["Id"],(int)reader["ContactId"], reader["EmailAddress"] as string, reader["TypeId"].DBNullTo<int?>());
         }
     }
 }

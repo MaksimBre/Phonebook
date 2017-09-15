@@ -12,17 +12,13 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         internal Contacts(SqlConnection connection)
         {
-            if (connection == null)
-                throw new ArgumentNullException("connection", "Valid connection is mandatory!");
-
-            this.connection = connection;
+            this.connection = connection ?? throw new ArgumentNullException("connection", "Valid connection is mandatory!");
         }
 
       public  IEnumerable<Contact> GetAll()
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM Contacts ", connection))
             {
-
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
@@ -52,7 +48,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
         }
         public IEnumerable<Contact> Search(string name)
         {
-            using (SqlCommand command = new SqlCommand("SELECT *  FROM Contacts WHERE Name LIKE '@Name' OR Surname LIKE '@Name' ", connection))//?
+            using (SqlCommand command = new SqlCommand("SELECT *  FROM Contacts WHERE Name LIKE '@Name' ", connection))//?
             {
               command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = name + "%";
 
@@ -72,7 +68,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
             if (contact == null)
                 throw new ArgumentNullException("contact", "Valid contact is mandatory!");
 
-            using (SqlCommand command = new SqlCommand("INSERT INTO Contacts (Name, Surname, Picture, DateOfBirth) " +
+            using (SqlCommand command = new SqlCommand("INSERT INTO Contacts (Name, Picture, DateOfBirth) " +
                                                        "VALUES (@Name, @Picture, @DateOfBirth)"+ 
                                                        "SELECT CAST(SCOPE_IDENTITY() AS int)", connection))
             {
@@ -80,7 +76,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
                 command.Parameters.Add("@Picture", SqlDbType.Image).Value = contact.Picture.Optional();
                 command.Parameters.Add("@DateOfBirth", SqlDbType.Date).Value = contact.DateOfBirth.Optional();
                 
-                return  contact.Id =  (int)command.ExecuteScalar();
+                return (int)command.ExecuteScalar();
             }
         }
 
@@ -89,8 +85,8 @@ namespace Phonebook.DataAccessLayer.DBAccess
             if (contact == null)
                 throw new ArgumentNullException("contact", "Valid contact is mandatory!");
 
-            using (SqlCommand command = new SqlCommand("UPDATE Contacts " + 
-                                                       "SET Name, Picture, DateOfBirth " +
+            using (SqlCommand command = new SqlCommand("UPDATE Contacts " +
+                                                       "SET Name = @Name, Picture=@Picture, DateOfBirth=@DateOfBirth " +
                                                        "WHERE Id = @Id", connection))
             {
                 command.Parameters.Add("@Id", SqlDbType.Int).Value = contact.Id;
@@ -101,18 +97,17 @@ namespace Phonebook.DataAccessLayer.DBAccess
                 command.ExecuteNonQuery();
             }
         }
-        public void Update(Contact contact,string name, string surname, string picture, DateTime? dateOfBirth)
+        public void Update(Contact contact,string name, string picture, DateTime? dateOfBirth)
         {
             if (contact == null)
                 throw new ArgumentNullException("contact", "Valid contact is mandatory!");
 
             using (SqlCommand command = new SqlCommand("UPDATE Contacts " +
-                                                       "SET Name = @Name, Surname=@Surname, Picture=@Picture, DateOfBirth=@DateOfBirth " +
+                                                       "SET Name = @Name, Picture=@Picture, DateOfBirth=@DateOfBirth " +
                                                        "WHERE Id = @Id", connection))
             {
                 command.Parameters.Add("@Id", SqlDbType.Int).Value = contact.Id;
                 command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = name;
-                command.Parameters.Add("@Surname", SqlDbType.NVarChar).Value = surname;
                 command.Parameters.Add("@Picture", SqlDbType.Image).Value = picture.Optional();
                 command.Parameters.Add("@DateOfBirth", SqlDbType.Date).Value = dateOfBirth.Optional();
 
