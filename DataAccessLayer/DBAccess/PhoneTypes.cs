@@ -6,11 +6,11 @@ using System.Data.SqlClient;
 
 namespace Phonebook.DataAccessLayer.DBAccess
 {
-    public class EmailTypes
+    public class PhoneTypes
     {
         private readonly SqlConnection connection;
 
-        internal EmailTypes(SqlConnection connection)
+        internal PhoneTypes(SqlConnection connection)
         {
             if (connection == null)
                 throw new ArgumentNullException("connection", "Valid connection is mandatory!");
@@ -18,77 +18,77 @@ namespace Phonebook.DataAccessLayer.DBAccess
             this.connection = connection;
         }
 
-        public IEnumerable<EmailType> GetAll()
+        public IEnumerable<PhoneType> GetAll()
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM EmailTypes", connection))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM PhoneTypes", connection))
             {
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    List<EmailType> emailTypes = new List<EmailType>();
+                    List<PhoneType> phoneType = new List<PhoneType>();
 
                     while (reader.Read())
-                        emailTypes.Add(CreateEmailType(reader));
+                        phoneType.Add(CreatePhoneType(reader));
 
-                    return emailTypes;
+                    return phoneType;
                 }
             }
         }
 
-        public EmailType GetById(int id)
+        public PhoneType GetById(int id)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM EmailTypes WHERE Id = @Id", connection))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM PhoneTypes WHERE Id = @Id", connection))
             {
                 command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.Read())
-                        return CreateEmailType(reader);
+                        return CreatePhoneType(reader);
 
                     return null;
                 }
             }
         }
 
-        public int Insert(EmailType emailtype)
+        public int Insert(PhoneType phonetype)
         {
-            using (SqlCommand command = new SqlCommand("INSERT INTO EmailTypes (Name) " +
-                                                       "VALUES (@Name)"+
+            using (SqlCommand command = new SqlCommand("INSERT INTO PhoneTypes (Name) " +
+                                                       "VALUES (@Name)" +
                                                        "SELECT CAST(SCOPE_IDENTITY() AS int)", connection))
             {
-                command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = emailtype.Name;
+                command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = phonetype.Name;
 
                 return (int)command.ExecuteScalar();
             }
         }
 
-        public void Update(EmailType emailtype)
+        public void Update(PhoneType phonetype)
         {
-            using (SqlCommand command = new SqlCommand("UPDATE EmailTypes " +
+            using (SqlCommand command = new SqlCommand("UPDATE PhoneTypes " +
                                                        "SET  Name = @Name " +
                                                        "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = emailtype.Id;
-                command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = emailtype.Name;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = phonetype.Id;
+                command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = phonetype.Name;
 
                 command.ExecuteNonQuery();
             }
         }
 
-        public void Delete(EmailType emailtype)
+        public void Delete(PhoneType phonetype)
         {
 
-            using (SqlCommand command = new SqlCommand("DELETE FROM EmailTypes " +
+            using (SqlCommand command = new SqlCommand("DELETE FROM PhoneTypes " +
                                                        "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = emailtype.Id;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = phonetype.Id;
                 command.ExecuteNonQuery();
             }
         }
 
-        private EmailType CreateEmailType(IDataReader reader)
+        private PhoneType CreatePhoneType(IDataReader reader)
         {
-            return new EmailType((int)reader["Id"] ,reader["Name"] as string);
+            return new PhoneType((int)reader["Id"], reader["Name"] as string);
         }
     }
 }

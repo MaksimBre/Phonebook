@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
 
 namespace Phonebook.DataAccessLayer.DBAccess
@@ -11,6 +10,10 @@ namespace Phonebook.DataAccessLayer.DBAccess
         public Emails Emails { get; set; }
         public EmailTypes EmailTypes { get; set; }
         public Contacts Contacts { get; set; }
+        public Phones Phones { get; set; }
+        public PhoneTypes PhoneTypes { get; set; }
+        public Countries Countries { get; set; }
+        public Addresses Addresses { get; set; }
 
         public Phonebook(string connectionString)
         {
@@ -23,6 +26,10 @@ namespace Phonebook.DataAccessLayer.DBAccess
             Emails = new Emails(connection);
             EmailTypes = new EmailTypes(connection);
             Contacts = new Contacts(connection);
+            Phones = new Phones(connection);
+            PhoneTypes = new PhoneTypes(connection);
+            Countries = new Countries(connection);
+            Addresses = new Addresses(connection);
         }
 
         public void Dispose()

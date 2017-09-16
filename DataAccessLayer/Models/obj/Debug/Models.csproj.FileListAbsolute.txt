@@ -23,3 +23,4 @@ C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Deb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

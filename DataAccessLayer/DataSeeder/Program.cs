@@ -15,7 +15,9 @@ namespace Phonebook.DataAccessLayer.DataSeeder
 
             using (DBAccess.Phonebook phonebook = new DBAccess.Phonebook(Properties.Settings.Default.PhonebookDbConnection))
             {
-                TableChecker.CheckContactTable(phonebook);
+                //TableChecker.CheckContactTable(phonebook);
+                //TableChecker.CheckPhoneTable(phonebook);
+                TableChecker.CheckAllTables(phonebook);
             }
 
         }
