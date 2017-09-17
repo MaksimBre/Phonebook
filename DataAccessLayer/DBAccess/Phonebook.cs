@@ -14,6 +14,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
         public PhoneTypes PhoneTypes { get; set; }
         public Countries Countries { get; set; }
         public Addresses Addresses { get; set; }
+        public AddressTypes AddressTypes { get; set; }
 
         public Phonebook(string connectionString)
         {
@@ -30,6 +31,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
             PhoneTypes = new PhoneTypes(connection);
             Countries = new Countries(connection);
             Addresses = new Addresses(connection);
+            AddressTypes = new AddressTypes(connection);
         }
 
         public void Dispose()

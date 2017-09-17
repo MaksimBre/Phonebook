@@ -294,6 +294,18 @@ namespace Phonebook.DataAccessLayer.DataSeeder
             };
             phone2.Id = phonebook.Phones.Insert(phone2);
 
+            AddressType addressType1 = new AddressType()
+            {
+                Name = "Office"
+            };
+            addressType1.Id = phonebook.AddressTypes.Insert(addressType1);
+
+            AddressType addressType2 = new AddressType()
+            {
+                Name = "Home"
+            };
+            addressType2.Id = phonebook.AddressTypes.Insert(addressType2);
+
             Address address1 = new Address()
             {
                 City = "Zrenjanin",
@@ -301,6 +313,7 @@ namespace Phonebook.DataAccessLayer.DataSeeder
                 Street = "Uteroti Janos",
                 HouseNo = 30,
                 ContactId = contact1.Id,
+                TypeId = addressType1.Id,
                 CountryId = country1.Id
             };
             address1.Id = phonebook.Addresses.Insert(address1);
@@ -312,13 +325,14 @@ namespace Phonebook.DataAccessLayer.DataSeeder
                 Street = "White House",
                 HouseNo = 2,
                 ContactId = contact2.Id,
+                TypeId = addressType2.Id,
                 CountryId = country2.Id
             };
             address2.Id = phonebook.Addresses.Insert(address2);
             address2.ZipCode = "33333";
             phonebook.Addresses.Update(address2);
 
-            Address atemp = new Address()
+            /*Address atemp = new Address()
             {
                 City = "Washington",
                 ZipCode = "11000",
@@ -328,7 +342,7 @@ namespace Phonebook.DataAccessLayer.DataSeeder
                 CountryId = country1.Id
             };
             atemp.Id = phonebook.Addresses.Insert(atemp);
-            phonebook.Addresses.Delete(atemp.Id);
+            phonebook.Addresses.Delete(atemp.Id);*/
 
 
         }

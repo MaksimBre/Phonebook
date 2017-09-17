@@ -38,8 +38,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
                         WriteToTable(5, country.PhonePrefix+ phone.Number.ToString());
                         if(phone.TypeId != null)
                         {
-                            PhoneType phonetype = new PhoneType();
-                            phonetype = phonebook.PhoneTypes.GetById((int)phone.TypeId);
+                            PhoneType phonetype = phonebook.PhoneTypes.GetById((int)phone.TypeId);
                             string typename = Equals(phonetype, null) ? "N/A" : phonetype.Name;
                             WriteToTable(6, typename);
                         }
@@ -57,13 +56,19 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
                     }
 
                     WriteToTable(9);
+                    WriteToTable(11);
                     foreach (Address address in phonebook.Addresses.GetAllByContactId(contact.Id))
                     {
-                        WriteToTable(9,"aaa");
+                        WriteToTable(9, address.City);
+                        WriteToTable(10, address.Street + " " + address.HouseNo);
+
+                        if (address.TypeId != null)
+                        {
+                            AddressType addressType = phonebook.AddressTypes.GetById((int)address.TypeId);
+                            WriteToTable(11, addressType.Name);
+                        }
                     }
-
-                    
-
+                        
                     
 
                     WriteToTable(10);
