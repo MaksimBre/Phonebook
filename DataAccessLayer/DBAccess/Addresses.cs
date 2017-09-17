@@ -62,7 +62,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
                                                        "SELECT CAST(SCOPE_IDENTITY() AS int)", connection))
             {
                 command.Parameters.Add("@City", SqlDbType.NVarChar).Value = address.City;
-                command.Parameters.Add("@ZipCode", SqlDbType.NVarChar).Value = address.ZipCode;
+                command.Parameters.Add("@ZipCode", SqlDbType.NVarChar).Value = address.ZipCode.Optional();
                 command.Parameters.Add("@Street", SqlDbType.NVarChar).Value = address.Street;
                 command.Parameters.Add("@HouseNo", SqlDbType.Int).Value = address.HouseNo;
                 command.Parameters.Add("@ContactId", SqlDbType.Int).Value = address.ContactId;
@@ -84,7 +84,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
             {
                 command.Parameters.Add("@Id", SqlDbType.NVarChar).Value = address.Id;
                 command.Parameters.Add("@City", SqlDbType.NVarChar).Value = address.City;
-                command.Parameters.Add("@ZipCode", SqlDbType.NVarChar).Value = address.ZipCode;
+                command.Parameters.Add("@ZipCode", SqlDbType.NVarChar).Value = address.ZipCode.Optional();
                 command.Parameters.Add("@Street", SqlDbType.NVarChar).Value = address.Street;
                 command.Parameters.Add("@HouseNo", SqlDbType.Int).Value = address.HouseNo;
                 command.Parameters.Add("@ContactId", SqlDbType.Int).Value = address.ContactId;
@@ -108,7 +108,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         private Address CreateAddress(IDataReader reader)
         {
-            return new Address((int)reader["Id"], reader["City"] as string, reader["ZipCode"] as string, reader["Street"] as string, (int)reader["HouseNo"], (int)reader["ContactId"], (int)reader["TypeId"].DBNullTo<int?>(), (int)reader["CountryId"]);
+            return new Address((int)reader["Id"], reader["City"] as string, reader["ZipCode"] as string, reader["Street"] as string, (int)reader["HouseNo"], (int)reader["ContactId"], (int)reader["CountryId"], (int)reader["TypeId"].DBNullTo<int?>());
         }
     }
 }

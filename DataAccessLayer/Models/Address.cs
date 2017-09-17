@@ -12,8 +12,8 @@
             Street = street;
             HouseNo = houseNo;
             ContactId = contactId;
-            TypeId = typeId;
             CountryId = countryId;
+            TypeId = typeId;
         }
 
         public int Id { get; set; }
@@ -22,7 +22,7 @@
         public string Street { get; set; }
         public int HouseNo { get; set; }
         public int ContactId { get; set; }
-        public int? TypeId { get; set; }
         public int CountryId { get; set; }
+        public int? TypeId { get; set; }
     }
 }
