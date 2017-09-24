@@ -1,0 +1,93 @@
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\Project V3( with ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+F:\Project V4 ( ConsoleClient )\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\obj\Debug\Managers.csproj.CoreCompileInputs.cache
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\obj\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll.config
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Managers.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Managers\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb

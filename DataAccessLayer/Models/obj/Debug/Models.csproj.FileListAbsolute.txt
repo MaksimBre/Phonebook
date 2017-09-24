@@ -12,15 +12,15 @@ C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\Models\bin\Debug
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\Models\obj\Debug\Models.dll
 C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\DataAccessLayer\Models\obj\Debug\Models.pdb
 C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
-D:\Max\Projects\phonebook\DataAccessLayer\Models\bin\Debug\Models.dll
-D:\Max\Projects\phonebook\DataAccessLayer\Models\bin\Debug\Models.pdb
 D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
 D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
-D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.dll
-D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Models.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\Models\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.pdb

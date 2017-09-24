@@ -58,10 +58,8 @@ D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.Data
 D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe.config
 D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
 D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.ConsoleClient.pdb
-D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.dll
 D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.dll
 D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
-D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Models.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csprojResolveAssemblyReference.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\ConsoleClient.csproj.CoreCompileInputs.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\obj\Debug\Phonebook.DataAccessLayer.ConsoleClient.exe
@@ -73,3 +71,5 @@ C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.DBAccess.pdb
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.pdb
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.dll
+D:\Max\Projects\phonebook\DataAccessLayer\ConsoleClient\bin\Debug\Phonebook.DataAccessLayer.Models.pdb

@@ -10,7 +10,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
 
         static void Main(string[] args)
         {
-            Console.WindowWidth = 231;
+            Console.WindowWidth = 150;
             DrawHeader();
             /*List<string> numbers = new List<string>();
             List<string> contacts = new List<string>();

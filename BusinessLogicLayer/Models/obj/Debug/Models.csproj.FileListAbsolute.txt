@@ -1,0 +1,35 @@
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\praktikant\Documents\Visual Studio 2015\Projects\Phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.2)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+C:\Users\BABIC\Desktop\ProjectV5(MVC v1.4)\Phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\bin\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
+D:\Max\Projects\phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
