@@ -28,7 +28,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             }
         }
 
-        public void Update(Email email)
+        public void Save(Email email)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
@@ -49,7 +49,8 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (Equals(dbEmail, null))
                 return null;
             Debug.Assert(dbEmail.ContactId == contact.Id);
-            Email email = new Email(contact, dbEmail.EmailAddress/*, dbEmail.TypeId.HasValue ? new EmailTypes().GetById(dbEmail.TypeId.Value) : null*/);
+
+            Email email = new Email(contact, dbEmail.EmailAddress, dbEmail.TypeId.HasValue ? new EmailTypes().GetById(dbEmail.TypeId.Value) : null);
             return email;
         }
         private DataAccessLayer.Models.Email Map(Email email)
@@ -57,7 +58,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (Equals(email, null))
                 throw new ArgumentNullException("email", "Valid email is mandatory!");
 
-            return new DataAccessLayer.Models.Email(email.Id, email.Contact.Id, email.Address/*, email.EmailType?.Id*/);
+            return new DataAccessLayer.Models.Email(email.Id, email.Contact.Id, email.EmailAddress, email.EmailType?.Id);
 
            
         }

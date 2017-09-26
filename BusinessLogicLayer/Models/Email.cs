@@ -7,13 +7,13 @@ namespace Phonebook.BusinessLogicLayer.Models
     public class Email
     {
         private Contact contact;
-        private string address;
+        private string emailAddress;
         public Email() { }
-        public Email(Contact contact, string address/*, EmailType emailType = null*/)
+        public Email(Contact contact, string emailAddress, EmailType emailType = null)
         {
             Contact = contact;
-            Address = address;
-            //EmailType = emailType;
+            EmailAddress = emailAddress;
+            EmailType = emailType;
         }
 
         public int Id { get; set; }
@@ -31,19 +31,19 @@ namespace Phonebook.BusinessLogicLayer.Models
                 contact = value;
             }
         }
-        public string Address
+        public string EmailAddress
         {
             get
             {
-                Debug.Assert(!Equals(address,null));
-                return address;
+                Debug.Assert(!Equals(emailAddress,null));
+                return emailAddress;
             }
             set
             { if (Equals(value, null))
-                    throw new ArgumentNullException("Address", "Valid address is mandatory");
+                    throw new ArgumentNullException("EmailAddress", "Valid email address is mandatory");
 
-                address = value;
+                emailAddress = value;
             } }
-        //public EmailType EmailType { get; set; }
+        public EmailType EmailType { get; set; }
     }
 }

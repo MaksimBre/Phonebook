@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PhoneType.cs" />
+    <Compile Include="Phone.cs" />
+    <Compile Include="Address.cs" />
     <Compile Include="Contact.cs" />
+    <Compile Include="Country.cs" />
     <Compile Include="Email.cs" />
+    <Compile Include="AddressType.cs" />
+    <Compile Include="EmailType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

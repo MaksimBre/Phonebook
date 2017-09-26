@@ -89,12 +89,12 @@ namespace Phonebook.DataAccessLayer.DBAccess
             }
         }
 
-        public void Delete(int id)
+        public void Delete(Phone phone)
         {
             using (SqlCommand command = new SqlCommand("DELETE FROM Phones " +
                                                        "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = phone.Id;
 
                 command.ExecuteNonQuery();
             }

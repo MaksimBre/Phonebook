@@ -66,12 +66,12 @@ namespace Phonebook.DataAccessLayer.DBAccess
             }
         }
 
-        public void Delete(int id)
+        public void Delete(Country country)
         {
             using (SqlCommand command = new SqlCommand("DELETE FROM Countries " +
                                                        "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = country.Id;
 
                 command.ExecuteNonQuery();
             }

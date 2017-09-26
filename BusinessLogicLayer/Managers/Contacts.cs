@@ -41,7 +41,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
            
         }
 
-        public void Update(Contact contact)
+        public void Save(Contact contact)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
