@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "BusinessLogicLaye
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Managers", "BusinessLogicLayer\Managers\Managers.csproj", "{6A480EEB-1E6A-4291-B03A-05E4F79E0377}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationLayer", "PresentationLayer", "{30A6C531-E63A-45EE-87E8-E186F3E608C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "PresentationLayer\Web\Web.csproj", "{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +57,10 @@ Global
 		{6A480EEB-1E6A-4291-B03A-05E4F79E0377}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A480EEB-1E6A-4291-B03A-05E4F79E0377}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A480EEB-1E6A-4291-B03A-05E4F79E0377}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,6 +74,7 @@ Global
 		{2D5D7250-FFBF-4F6A-B73B-46C68D336BF5} = {8CEF1BEF-B024-48C2-AC17-EE12C88F2675}
 		{F533C36C-8257-4D51-84DE-556D85F8362C} = {2D5D7250-FFBF-4F6A-B73B-46C68D336BF5}
 		{6A480EEB-1E6A-4291-B03A-05E4F79E0377} = {17334C0E-1A67-42F6-AB76-44E4655CD612}
+		{DF80B102-E503-4B6F-9D18-9B59B5AB1BF1} = {30A6C531-E63A-45EE-87E8-E186F3E608C1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3771F794-0E96-4BBE-8889-24EFEE38D500}
