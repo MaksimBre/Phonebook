@@ -1,5 +1,6 @@
 ﻿using Phonebook.DataAccessLayer.Models;
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -11,10 +12,23 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         internal Countries(SqlConnection connection)
         {
-            if (connection == null)
-                throw new ArgumentNullException("connection", "Valid connection is mandatory!");
+            this.connection = connection ?? throw new ArgumentNullException("connection", "Valid connection is mandatory!");
+        }
 
-            this.connection = connection;
+        public IEnumerable<Country> GetAll()
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM Countries", connection))
+            {
+                using (SqlDataReader reader = command.ExecuteReader())
+                {
+                    List<Country> countries = new List<Country>();
+
+                    while (reader.Read())
+                        countries.Add(CreateCountry(reader));
+
+                    return countries;
+                }
+            }
         }
 
         public Country GetById(int id)

@@ -1,34 +1,35 @@
 ﻿using Phonebook.BusinessLogicLayer.Managers;
+using Phonebook.PresentationLayer.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using Web.Models;
 
 namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly PhoneTypes manager = new PhoneTypes();
+        private readonly PhoneTypes PhoneTypeManager = new PhoneTypes();
+        private readonly Contacts ContactManager = new Contacts();
 
         public ActionResult Index()
         {
-            IEnumerable<PhoneTypeModel> model = manager.GetAll().Select(x => (PhoneTypeModel)x);
+            //IEnumerable<PhoneTypeModel> model = PhoneTypeManager.GetAll().Select(x => (PhoneTypeModel)x);
+            IEnumerable<ContactModel> model = ContactManager.GetAll().Select(x => (ContactModel)x);
 
             return View(model);
         }
-
-        public ActionResult Test()
+        
+        public ActionResult Details(int id)
         {
-            IEnumerable<PhoneTypeModel> model = manager.GetAll().Select(x => (PhoneTypeModel)x);
-
-            return View(model.First());
+            ContactModel model = ContactManager.GetById(id);
+            return View(model);
         }
 
         [HttpPost]
         public ActionResult SavePhoneType(PhoneTypeModel model)
         {
-            manager.Save(model);
+            PhoneTypeManager.Save(model);
 
             return RedirectToAction("Index");
         }

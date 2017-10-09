@@ -1,14 +1,21 @@
-﻿@model IEnumerable<PhoneTypeModel>
+﻿@model IEnumerable<ContactModel>
 
 <div class="row">
-    <ul>
-        @foreach (var phoneType in Model)
+    <div class="separator"></div>
+
+    <div class="tableHeaderContainer">
+        <div class="tableHeader">Name</div>
+        <div class="tableHeader">Date of birth</div>
+        <div class="tableHeader">Picture</div>
+    </div>
+
+        @foreach (var contact in Model)
         {
-            <li>
-            @(phoneType.Name + "bla bla balba")
-            </li>
+            <a href="Details/@contact.Id"><div class="tableContainer">
+                <div class="tableColl">@contact.Name</div>
+                <div class="tableColl">@contact.DateOfBirth</div>
+                <div class="tableColl">@contact.Picture</div>
+            </div></a>
         }
-    </ul>
 
-
-</div>
+    </div>

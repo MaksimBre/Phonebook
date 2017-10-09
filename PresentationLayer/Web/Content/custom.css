@@ -1,0 +1,25 @@
+﻿.separator {
+    margin-top:50px;
+}
+.tableHeaderContainer {
+    background-color: #ccc;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    cursor:default;
+}
+.tableHeader,.tableColl{
+    float:left;
+    width:30%;
+}
+.tableContainer {
+    background-color: #eee;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.tableContainer:hover{
+    background-color:lightskyblue;
+}

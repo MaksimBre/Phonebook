@@ -1,11 +1,21 @@
 ﻿using Phonebook.BusinessLogicLayer.Managers.Properties;
 using Phonebook.BusinessLogicLayer.Models;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Phonebook.BusinessLogicLayer.Managers
 {
     public class Countries
     {
+        public IEnumerable<Country> GetAll()
+        {
+            using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
+            {
+                return phonebook.Countries.GetAll().Select(c => Map(c));
+            }
+        }
+
         public Country GetById(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))

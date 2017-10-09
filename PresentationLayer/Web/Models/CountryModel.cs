@@ -1,6 +1,6 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
 
-namespace Web.Models
+namespace Phonebook.PresentationLayer.Web.Models
 {
     public class CountryModel
     {

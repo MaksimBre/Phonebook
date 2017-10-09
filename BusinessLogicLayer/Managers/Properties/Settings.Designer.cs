@@ -26,7 +26,7 @@ namespace Phonebook.BusinessLogicLayer.Managers.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=TOSHIBA-PC;Initial Catalog=PhonebookDB;Integrated Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-39LUGD9;Initial Catalog=PhonebookDB;Integrated Security=True")]
         public string PhonebookDBConnection {
             get {
                 return ((string)(this["PhonebookDBConnection"]));
