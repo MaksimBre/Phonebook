@@ -10,7 +10,7 @@ namespace Phonebook.DataAccessLayer.Models
     {
         public Phone() { }
 
-        public Phone(int id, int number, int? typeId, int contactId, int countryId)
+        public Phone(int id, int number, int contactId, int countryId, int? typeId)
         {
             Id = id;
             Number = number;
@@ -21,8 +21,8 @@ namespace Phonebook.DataAccessLayer.Models
 
         public int Id { get; set; }
         public int Number { get; set; }
-        public int? TypeId { get; set; }
         public int ContactId { get; set; }
         public int CountryId { get; set; }
+        public int? TypeId { get; set; }
     }
 }

@@ -1,0 +1,17 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.ContactModel
+@using Phonebook.BusinessLogicLayer.Models;
+
+<dt>
+    @Html.Raw("Email(s)")
+</dt>
+
+@foreach (Email email in Model.Emails)
+            {
+    <dd>
+        @Html.Raw(email.EmailAddress)
+        @Html.Raw(" (" + email.EmailType.Name + ")")
+    </dd>
+}
+<dd>
+    @Html.ActionLink("+ Add", "AddEmail", new { id = Model.Id }, new { @class = "btn btn-info btn-xs odabij" })
+</dd>

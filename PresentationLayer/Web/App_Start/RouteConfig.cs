@@ -16,7 +16,7 @@ namespace Web
             routes.MapRoute(
                 name: "Details",
                 url: "Details/{id}",
-                defaults: new { controller = "Home", action = "Details"}
+                defaults: new { controller = "Contact", action = "Details"}
             );
 
             routes.MapRoute(

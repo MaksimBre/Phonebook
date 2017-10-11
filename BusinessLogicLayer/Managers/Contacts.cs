@@ -62,11 +62,13 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (dbContact == null)
                 return null;
 
-            Contact contact = new Contact(dbContact.Name, dbContact.Picture, dbContact.DateOfBirth);
-            contact.Id = dbContact.Id;
+            Contact contact = new Contact(dbContact.Name, dbContact.Picture, dbContact.DateOfBirth)
+            {
+                Id = dbContact.Id
+            };
             //contact.Phones = new Phones().GetByContact(contact);
             //contact.Addresses = new Addresses().GetByContact(contact);
-            contact.Emails = new Emails().GetByContact(contact);
+            //contact.Emails = new Emails().GetByContact(contact);
 
             return contact;
         }

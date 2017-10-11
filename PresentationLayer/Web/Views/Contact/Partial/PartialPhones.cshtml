@@ -1,0 +1,21 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.ContactModel
+@using Phonebook.BusinessLogicLayer.Models;
+
+<dt>
+    @Html.Raw("Phone(s)")
+</dt>
+
+@foreach (Phone phone in Model.Phones)
+{
+    <dd>
+        @Html.Raw(phone.Number)
+        @if (phone.TypeId != null)
+        {
+            @Html.Raw(" (" + phone.TypeId.Name + ")")
+        }
+        @Html.ActionLink("- Remove", "DeletePhone", new { id = phone.Id }, new { @class = "btn btn-xs" })
+    </dd>
+}
+<dd>
+    @Html.ActionLink("+ Add", "AddPhone", new { id = Model.Id }, new { @class = "btn btn-info btn-xs odabij" })
+</dd>

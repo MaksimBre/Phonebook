@@ -14,15 +14,9 @@ namespace Web.Controllers
 
         public ActionResult Index()
         {
-            //IEnumerable<PhoneTypeModel> model = PhoneTypeManager.GetAll().Select(x => (PhoneTypeModel)x);
+            ViewBag.Title = "Contact list";
             IEnumerable<ContactModel> model = ContactManager.GetAll().Select(x => (ContactModel)x);
-
-            return View(model);
-        }
-        
-        public ActionResult Details(int id)
-        {
-            ContactModel model = ContactManager.GetById(id);
+            
             return View(model);
         }
 

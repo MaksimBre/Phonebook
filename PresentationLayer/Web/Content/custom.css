@@ -2,11 +2,16 @@
     margin-top:50px;
 }
 .tableHeaderContainer {
-    background-color: #ccc;
+    background: #ccc;
+    background: -webkit-linear-gradient(#eee, #ccc);
+    background: -o-linear-gradient(#eee, #ccc);
+    background: -moz-linear-gradient(#eee, #ccc);
+    background: linear-gradient(#eee, #ccc);
     height: 40px;
     line-height: 40px;
     padding-left: 30px;
-    cursor:default;
+    cursor: default;
+    font-weight: bold;
 }
 .tableHeader,.tableColl{
     float:left;
@@ -18,8 +23,25 @@
     line-height: 40px;
     padding-left: 30px;
     cursor: pointer;
-    transition: 0.3s all;
+    transition: 0.3s background-color, color;
 }
 .tableContainer:hover{
     background-color:lightskyblue;
+    color: black;
+}
+.add-another {
+    color: green;
+    line-height: 40px;
+    height: 40px;
+    width:50px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.nav-bar{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+.odabij{
+    margin-top:10px;
+    margin-bottom:10px !important;
 }

@@ -1,5 +1,6 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
 using System;
+using System.Collections.Generic;
 
 namespace Phonebook.PresentationLayer.Web.Models
 {
@@ -18,6 +19,9 @@ namespace Phonebook.PresentationLayer.Web.Models
         public byte[] Picture { get; set; }
         public DateTime? DateOfBirth { get; set; }
 
+        public IEnumerable<Email> Emails;
+        public IEnumerable<Phone> Phones;
+
         public static implicit operator Contact(ContactModel cm)
         {
             Contact contact = new Contact(cm.Name, cm.Picture, cm.DateOfBirth)
@@ -30,8 +34,10 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator ContactModel(Contact c)
         {
-            ContactModel contact = new ContactModel(c.Name, c.Picture, c.DateOfBirth);
-            contact.Id = c.Id;
+            ContactModel contact = new ContactModel(c.Name, c.Picture, c.DateOfBirth)
+            {
+                Id = c.Id
+            };
 
             return contact;
         }

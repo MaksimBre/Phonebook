@@ -102,7 +102,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
          
         private Phone CreatePhone(IDataReader reader )
         {
-            return new Phone((int)reader["Id"],(int)reader["Number"], reader["TypeId"].DBNullTo<int?>(), (int)reader["ContactId"], (int)reader["CountryId"]);
+            return new Phone((int)reader["Id"],(int)reader["Number"], (int)reader["ContactId"], (int)reader["CountryId"], reader["TypeId"].DBNullTo<int?>());
         }
     }
 }

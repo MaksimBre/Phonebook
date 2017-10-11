@@ -14,7 +14,7 @@ namespace Phonebook.BusinessLogicLayer.Models
         private int countryId;
 
         public Phone() { }
-        public Phone(int number, int contactId, int countryId, int? typeId = null)
+        public Phone(int number, int contactId, int countryId, PhoneType typeId = null)
         {
             Number = number;
             ContactId = contactId;
@@ -87,6 +87,6 @@ namespace Phonebook.BusinessLogicLayer.Models
             }
         }
 
-        public int? TypeId { get; set; }
+        public PhoneType TypeId { get; set; }
     }
 }

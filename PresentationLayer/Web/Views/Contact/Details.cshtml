@@ -1,0 +1,17 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.ContactModel
+
+<h2>Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        @Html.Partial("Partial/PartialDetails",Model)
+        @Html.Partial("Partial/PartialEmails", Model)
+        @Html.Partial("Partial/PartialPhones", Model)
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", "Home", null, new { @class = "btn btn-primary" })
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-warning" })
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id }, new { @class = "btn btn-danger" })
+</p>

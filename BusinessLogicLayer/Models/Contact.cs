@@ -38,7 +38,6 @@ namespace Phonebook.BusinessLogicLayer.Models
                 catch
                 {
                     name = oldValue;
-                    //throw;
                 }
             }
         }
@@ -47,6 +46,6 @@ namespace Phonebook.BusinessLogicLayer.Models
 
         //public IEnumerable<Phone> Phones { get; set; }
         //public IEnumerable<Address> Addresses { get; set; }
-        public IEnumerable<Email> Emails { get; set; }
+        //public IEnumerable<Email> Emails { get; set; }
     }
 }

@@ -11,11 +11,13 @@
 
         @foreach (var contact in Model)
         {
-            <a href="Details/@contact.Id"><div class="tableContainer">
+            <a href="Contact/Details/@contact.Id"><div class="tableContainer">
                 <div class="tableColl">@contact.Name</div>
-                <div class="tableColl">@contact.DateOfBirth</div>
+                <div class="tableColl">@Convert.ToDateTime(contact.DateOfBirth).ToShortDateString()</div>
                 <div class="tableColl">@contact.Picture</div>
-            </div></a>
+                </div></a>
         }
-
+    <div class="nav-bar">
+        @Html.ActionLink("Add contact", "Create", "Contact", null, new { @class = "btn btn-primary" })
     </div>
+</div>

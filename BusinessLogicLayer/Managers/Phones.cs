@@ -22,7 +22,6 @@ namespace Phonebook.BusinessLogicLayer.Managers
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                //return Map(phonebook.Addresses.GetAllByContact(contact));
                 return phonebook.Phones.GetAllByContactId(contact.Id).Select(p => Map(p, contact));
             }
         }
@@ -59,7 +58,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (contact == null)
                 return null;
 
-            Phone phone = new Phone(dbPhone.Number, dbPhone.ContactId, dbPhone.CountryId, contact.Id);
+            Phone phone = new Phone(dbPhone.Number, contact.Id, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null);
             phone.Id = dbPhone.Id;
 
             return phone;
@@ -70,7 +69,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (dbPhone == null)
                 return null;
 
-            Phone phone = new Phone(dbPhone.Number, dbPhone.ContactId, dbPhone.CountryId, dbPhone.TypeId);
+            Phone phone = new Phone(dbPhone.Number, dbPhone.ContactId, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null);
             phone.Id = dbPhone.Id;
 
             return phone;
@@ -81,7 +80,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (phone == null)
                 throw new ArgumentNullException("phone", "Valid phone is mandatory!");
 
-            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.TypeId, phone.ContactId, phone.CountryId);
+            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.ContactId, phone.CountryId, phone.TypeId?.Id);
         }
     }
 }
