@@ -1,23 +1,26 @@
-﻿@model IEnumerable<ContactModel>
+﻿@model IEnumerable<Phonebook.PresentationLayer.Web.Models.ContactModel>
 
 <div class="row">
     <div class="separator"></div>
 
     <div class="tableHeaderContainer">
+        <div class="tableHeader picture-col">Picture</div>
         <div class="tableHeader">Name</div>
         <div class="tableHeader">Date of birth</div>
-        <div class="tableHeader">Picture</div>
     </div>
 
         @foreach (var contact in Model)
         {
-            <a href="Contact/Details/@contact.Id"><div class="tableContainer">
+            <a href="@Url.Action("Details","Contact", new { id = contact.Id})">
+        
+            <div class="tableContainer">
+                <div class="tableColl picture-col"><div class="profile-picture-container"></div>@contact.Picture</div>
                 <div class="tableColl">@contact.Name</div>
-                <div class="tableColl">@Convert.ToDateTime(contact.DateOfBirth).ToShortDateString()</div>
-                <div class="tableColl">@contact.Picture</div>
-                </div></a>
+                <div class="tableColl">@contact.DateOfBirth</div>
+            </div>
+        </a>
         }
-    <div class="nav-bar">
-        @Html.ActionLink("Add contact", "Create", "Contact", null, new { @class = "btn btn-primary" })
-    </div>
+        <div class="nav-bar">
+            @Html.ActionLink("Add contact", "Create", "Contact", null, new { @class = "btn btn-primary" })
+        </div>
 </div>

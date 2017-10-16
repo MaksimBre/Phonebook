@@ -5,19 +5,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Diagnostics;
 
 namespace Phonebook.BusinessLogicLayer.Managers
 {
     public class Phones
     {
-        public Phone GetById(int id)
-        {
-            using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
-            {
-                return Map(phonebook.Phones.GetById(id));
-            }
-        }
-
         public IEnumerable<Phone> GetAllByContact(Contact contact)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
@@ -42,35 +35,24 @@ namespace Phonebook.BusinessLogicLayer.Managers
             }
         }
 
-        public void Delete(Phone phone)
+        public void Delete(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                phonebook.Phones.Delete(Map(phone));
+                phonebook.Phones.Delete(id);
             }
         }
 
         private Phone Map(DataAccessLayer.Models.Phone dbPhone, Contact contact)
         {
-            if (dbPhone == null)
+            if (Equals(dbPhone, null))
                 return null;
+            Debug.Assert(dbPhone.ContactId == contact.Id);
 
-            if (contact == null)
-                return null;
-
-            Phone phone = new Phone(dbPhone.Number, contact.Id, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null);
-            phone.Id = dbPhone.Id;
-
-            return phone;
-        }
-
-        private Phone Map(DataAccessLayer.Models.Phone dbPhone)
-        {
-            if (dbPhone == null)
-                return null;
-
-            Phone phone = new Phone(dbPhone.Number, dbPhone.ContactId, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null);
-            phone.Id = dbPhone.Id;
+            Phone phone = new Phone(dbPhone.Number, contact, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null)
+            {
+                Id = dbPhone.Id
+            };
 
             return phone;
         }
@@ -80,7 +62,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (phone == null)
                 throw new ArgumentNullException("phone", "Valid phone is mandatory!");
 
-            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.ContactId, phone.CountryId, phone.TypeId?.Id);
+            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.Contact.Id, phone.CountryId, phone.PhoneType?.Id);
         }
     }
 }

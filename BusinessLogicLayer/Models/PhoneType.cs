@@ -19,7 +19,7 @@ namespace Phonebook.BusinessLogicLayer.Models
         {
             get
             {
-                Debug.Assert(name != null);
+                //Debug.Assert(name != null);
                 return name;
             }
 

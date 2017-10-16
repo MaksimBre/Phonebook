@@ -42,10 +42,11 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
-                    if (reader.Read())
-                        return CreateEmailType(reader);
+                    EmailType emailType = new EmailType();
+                    while (reader.Read())
+                        emailType = CreateEmailType(reader);
 
-                    return null;
+                    return emailType;
                 }
             }
         }

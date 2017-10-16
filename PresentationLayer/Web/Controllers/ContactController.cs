@@ -1,6 +1,8 @@
 ﻿using Phonebook.BusinessLogicLayer.Managers;
 using Phonebook.BusinessLogicLayer.Models;
 using Phonebook.PresentationLayer.Web.Models;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 
 namespace Phonebook.PresentationLayer.Web.Controllers
@@ -21,14 +23,30 @@ namespace Phonebook.PresentationLayer.Web.Controllers
             ViewBag.Title = "Contact details";
             if (id.HasValue)
             {
-                ContactModel model = ContactManager.GetById((int)id);
-                model.Emails = EmailManager.GetByContact(model);
-                model.Phones = PhoneManager.GetAllByContact(model);
+                Contact contact = ContactManager.GetById((int)id);
+                
+                if (contact == null)
+                {
+                    return RedirectToAction("Index", "Home");
+
+                }
+
+                IEnumerable<PhoneModel> phones = PhoneManager.GetAllByContact(contact).Select(x => (PhoneModel)x);
+                IEnumerable<EmailModel> emails = EmailManager.GetAllByContact(contact).Select(x => (EmailModel)x);
+
+                ContactDetailsModel model = new ContactDetailsModel()
+                {
+                    Contact = contact,
+                    EmailList = emails,
+                    PhoneList = phones
+                };
+                //contactModel.Emails = EmailManager.GetByContact(contactModel);
+                //model.Phones = PhoneManager.GetAllByContact(model);
 
                 return View(model);
             }
 
-            return RedirectToAction("Index","Home");
+            return RedirectToAction("Index", "Home");
         }
 
         public ActionResult Edit(int id)
@@ -63,10 +81,10 @@ namespace Phonebook.PresentationLayer.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult DeletePhone(PhoneModel phoneModel)
+        /*public ActionResult DeletePhone(PhoneModel phoneModel)
         {
             PhoneManager.Delete(phoneModel);
             return RedirectToAction("Index", "Home");
-        }
+        }*/
     }
 }

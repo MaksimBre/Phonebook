@@ -12,10 +12,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         internal Emails(SqlConnection connection)
         {
-            if (connection == null)
-                throw new ArgumentNullException("connection", "Valid connection is mandatory!");
-
-            this.connection = connection;
+            this.connection = connection ?? throw new ArgumentNullException("connection", "Valid connection is mandatory!");
         }
 
        public Email GetById(int id)

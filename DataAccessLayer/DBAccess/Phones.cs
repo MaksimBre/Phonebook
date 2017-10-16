@@ -12,10 +12,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         internal Phones(SqlConnection connection)
         {
-            if (connection == null)
-                throw new ArgumentNullException("connection", "Valid connection is mandatory!");
-
-            this.connection = connection;
+            this.connection = connection ?? throw new ArgumentNullException("connection", "Valid connection is mandatory!");
         }
 
        public Phone GetById(int id)
@@ -89,12 +86,12 @@ namespace Phonebook.DataAccessLayer.DBAccess
             }
         }
 
-        public void Delete(Phone phone)
+        public void Delete(int id)
         {
             using (SqlCommand command = new SqlCommand("DELETE FROM Phones " +
                                                        "WHERE Id = @Id", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = phone.Id;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
 
                 command.ExecuteNonQuery();
             }

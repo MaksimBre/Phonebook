@@ -1,0 +1,25 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.ContactModel
+
+<div class="profile-pic">
+</div>
+<div class="basic-info">
+    <div class="display-title">
+    @Html.DisplayNameFor(model => model.Name)
+    </div>
+
+    <div class="display-info">
+        @Html.EditorFor(model => model.Name,
+    new { htmlAttributes = new { @class = "no-borders" } })
+        @Html.ValidationMessageFor(model => model.Name)
+    </div>
+
+    <div class="display-title">
+        @Html.DisplayNameFor(model => model.DateOfBirth)
+    </div>
+
+    <div class="display-info">
+        @Html.EditorFor(model => model.DateOfBirth,
+    new { htmlAttributes = new { @class = "no-borders" } })
+        @Html.ValidationMessageFor(model => model.DateOfBirth)
+    </div>
+</div>

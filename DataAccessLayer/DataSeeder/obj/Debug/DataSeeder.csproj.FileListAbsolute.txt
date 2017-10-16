@@ -80,3 +80,4 @@ C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\Data
 C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csproj.CoreCompileInputs.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.exe
 C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\Phonebook.DataAccessLayer.DataSeeder.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\DataSeeder\obj\Debug\DataSeeder.csprojResolveAssemblyReference.cache

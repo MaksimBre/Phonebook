@@ -1,6 +1,6 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
 using System;
-using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace Phonebook.PresentationLayer.Web.Models
 {
@@ -15,12 +15,15 @@ namespace Phonebook.PresentationLayer.Web.Models
         }
 
         public int Id { get; set; }
-        public string Name { get; set; }
-        public byte[] Picture { get; set; }
-        public DateTime? DateOfBirth { get; set; }
 
-        public IEnumerable<Email> Emails;
-        public IEnumerable<Phone> Phones;
+        [Required(ErrorMessage = "The name required")]
+        public string Name { get; set; }
+
+        public byte[] Picture { get; set; }
+
+        [DataType(DataType.Date)]
+        [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy-MM-dd}")]
+        public DateTime? DateOfBirth { get; set; }
 
         public static implicit operator Contact(ContactModel cm)
         {

@@ -7,7 +7,7 @@ namespace Phonebook.DataAccessLayer.ConsoleClient
     {
         static void Main(string[] args)
         {
-            Table.Width = 230;
+            Table.Width =160;
             Table.Title = "Users";
             Table.ColumnNames = new string[] { "Id", "Name", "Date of Birth", "Number", "Email", "City", "Street and number" };
             Table.Setup();

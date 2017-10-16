@@ -1,0 +1,28 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.PhoneModel
+@using Phonebook.BusinessLogicLayer.Managers;
+
+@using (Html.BeginForm("AddPhone", "PhoneDetails", FormMethod.Post))
+{
+    Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
+    @Html.HiddenFor(x => Model.ParseIds)
+    <div class="info-table add-phone">
+        <div>
+            @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders" } })
+            @Html.ValidationMessageFor(x => x.Number)
+        </div>
+        <div>
+            @{
+                PhoneTypes phoneTypesManager = new PhoneTypes();
+                IEnumerable<PhoneTypeModel> phoneTypes = phoneTypesManager.GetAll().Select(x => (PhoneTypeModel)x);
+            }
+            @Html.DropDownListFor(x => x.PhoneType.Id, new SelectList(phoneTypes, "Id", "Name", Model.PhoneType.Id), new { @class = "no-borders-drop" })
+            @Html.ValidationMessageFor(x => x.PhoneType.Name)
+        </div>
+
+        <div>
+            <input type="submit" value="Save" class="btn btn-success btn-xs">
+        </div>
+
+    </div>
+    <button type="button" class="btn btn-block btn-default add-email-button">Add new phone</button>
+                }

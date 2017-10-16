@@ -9,7 +9,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
 {
    public class Emails
     {
-        public IEnumerable<Email> GetByContact(Contact contact)
+        public IEnumerable<Email> GetAllByContact(Contact contact)
         {
             if (contact == null)
                 throw new ArgumentNullException("email", "Valid email is mandatory!");
@@ -36,11 +36,11 @@ namespace Phonebook.BusinessLogicLayer.Managers
             }
         }
 
-        public void Delete(Email email)
+        public void Delete(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                phonebook.Emails.Delete(email.Id);
+                phonebook.Emails.Delete(id);
             }
         }
 
@@ -50,7 +50,11 @@ namespace Phonebook.BusinessLogicLayer.Managers
                 return null;
             Debug.Assert(dbEmail.ContactId == contact.Id);
 
-            Email email = new Email(contact, dbEmail.EmailAddress, dbEmail.TypeId.HasValue ? new EmailTypes().GetById(dbEmail.TypeId.Value) : null);
+            Email email = new Email(contact, dbEmail.EmailAddress, dbEmail.TypeId.HasValue ? new EmailTypes().GetById(dbEmail.TypeId.Value) : null)
+            {
+                Id = dbEmail.Id
+            };
+
             return email;
         }
         private DataAccessLayer.Models.Email Map(Email email)

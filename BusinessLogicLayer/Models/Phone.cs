@@ -10,16 +10,16 @@ namespace Phonebook.BusinessLogicLayer.Models
     public class Phone
     {
         private int number;
-        private int contactId;
+        private Contact contact;
         private int countryId;
 
         public Phone() { }
-        public Phone(int number, int contactId, int countryId, PhoneType typeId = null)
+        public Phone(int number, Contact contact, int countryId, PhoneType phoneType = null)
         {
             Number = number;
-            ContactId = contactId;
+            Contact = contact;
             CountryId = countryId;
-            TypeId = typeId;
+            PhoneType = phoneType;
         }
 
         public int Id { get; set; }
@@ -45,24 +45,19 @@ namespace Phonebook.BusinessLogicLayer.Models
             }
         }
 
-        public int ContactId
+        public Contact Contact
         {
             get
             {
-                return contactId;
+                Debug.Assert(!Equals(contact, null));
+                return contact;
             }
             set
             {
-                int oldValue = contactId;
-                try
-                {
-                    contactId = value;
-                }
-                catch
-                {
-                    contactId = oldValue;
-                    //throw;
-                }
+                if (Equals(value, null))
+                    throw new ArgumentNullException("Email", "Valid email is mandatory");
+
+                contact = value;
             }
         }
 
@@ -87,6 +82,6 @@ namespace Phonebook.BusinessLogicLayer.Models
             }
         }
 
-        public PhoneType TypeId { get; set; }
+        public PhoneType PhoneType { get; set; }
     }
 }

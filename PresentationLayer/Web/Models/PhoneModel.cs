@@ -1,32 +1,32 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace Phonebook.PresentationLayer.Web.Models
 {
     public class PhoneModel
     {
-        public PhoneModel() { }
-        public PhoneModel(int number, int contactId, int countryId, int? typeId = null)
+        public PhoneModel()
+        {
+            Contact = new ContactModel();
+            PhoneType = new PhoneTypeModel();
+        }
+        public PhoneModel(int number, Contact contact, int countryId, PhoneTypeModel phoneType = default(PhoneTypeModel))
         {
             Number = number;
-            ContactId = contactId;
+            Contact = contact;
             CountryId = countryId;
-            TypeId = typeId;
+            PhoneType = phoneType;
         }
 
         public int Id { get; set; }
         public int Number { get; set; }
-        public int ContactId { get; set; }
+        public Contact Contact { get; set; }
         public int CountryId { get; set; }
-        public int? TypeId { get; set; }
+        public PhoneTypeModel PhoneType { get; set; }
+        public string ParseIds { get; set; }
 
         public static implicit operator Phone(PhoneModel pm)
         {
-            PhoneType phoneType = new PhoneType(){ Id = (int)pm.TypeId };
-            Phone phone = new Phone(pm.Number, pm.ContactId, pm.CountryId, phoneType)
+            Phone phone = new Phone(pm.Number, pm.Contact, pm.CountryId, pm.PhoneType)
             {
                 Id = pm.Id
             };
@@ -37,7 +37,7 @@ namespace Phonebook.PresentationLayer.Web.Models
         public static implicit operator PhoneModel(Phone p)
         {
 
-            PhoneModel phoneModel = new PhoneModel(p.Number, p.ContactId, p.CountryId, p.TypeId.Id)
+            PhoneModel phoneModel = new PhoneModel(p.Number, p.Contact, p.CountryId, p.PhoneType)
             {
                 Id = p.Id
             };

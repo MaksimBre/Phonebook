@@ -143,10 +143,13 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\EmailDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PhoneDetailsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ContactDetailsModel.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\CountryModel.cs" />
     <Compile Include="Models\EmailModel.cs" />
@@ -163,6 +166,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
+    <Content Include="Content\images\default-profile-picture.png" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -295,14 +299,17 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Contact\Details.cshtml" />
-    <Content Include="Views\Contact\Partial\PartialEmails.cshtml" />
-    <Content Include="Views\Contact\Partial\PartialDetails.cshtml" />
-    <Content Include="Views\Contact\Partial\PartialPhones.cshtml" />
+    <Content Include="Views\Contact\Partial\_EmailDetails.cshtml" />
+    <Content Include="Views\Contact\Partial\_PartialDetails.cshtml" />
     <Content Include="Views\Contact\Edit.cshtml" />
     <Content Include="Views\Contact\Create.cshtml" />
+    <Content Include="Views\Contact\Partial\_EmailAdd.cshtml" />
+    <Content Include="Views\Contact\Partial\_PhoneDetails.cshtml" />
+    <Content Include="Views\Contact\Partial\_PhoneAdd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\PhoneDetails\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,0 +1,28 @@
+﻿@model Phonebook.PresentationLayer.Web.Models.EmailModel
+@using Phonebook.BusinessLogicLayer.Managers;
+
+@using (Html.BeginForm("AddEmail", "EmailDetails", FormMethod.Post))
+{
+    Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
+    @Html.HiddenFor(x => Model.ParseIds)
+    <div class="info-table add-email">
+        <div>
+            @Html.EditorFor(x => x.EmailAddress, new { htmlAttributes = new { @class = "no-borders" } })
+            @Html.ValidationMessageFor(x => x.EmailAddress)
+        </div>
+        <div>
+            @{
+                EmailTypes emailTypesManager = new EmailTypes();
+                IEnumerable<EmailTypeModel> emailTypes = emailTypesManager.GetAll().Select(x => (EmailTypeModel)x);
+            }
+            @Html.DropDownListFor(x => x.EmailType.Id, new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id), new { @class = "no-borders-drop" })
+            @Html.ValidationMessageFor(x => x.EmailType.Name)
+        </div>
+
+        <div>
+            <input type="submit" value="Save" class="btn btn-success btn-xs">
+        </div>
+        
+    </div>
+    <button type="button" class="btn btn-block btn-default add-email-button">Add new email</button>
+}
