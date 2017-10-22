@@ -11,14 +11,14 @@ namespace Phonebook.BusinessLogicLayer.Models
     {
         private int number;
         private Contact contact;
-        private int countryId;
+        private Country country;
 
         public Phone() { }
-        public Phone(int number, Contact contact, int countryId, PhoneType phoneType = null)
+        public Phone(int number, Contact contact, Country country, PhoneType phoneType = null)
         {
             Number = number;
             Contact = contact;
-            CountryId = countryId;
+            Country = country;
             PhoneType = phoneType;
         }
 
@@ -55,30 +55,25 @@ namespace Phonebook.BusinessLogicLayer.Models
             set
             {
                 if (Equals(value, null))
-                    throw new ArgumentNullException("Email", "Valid email is mandatory");
+                    throw new ArgumentNullException("Contact", "Valid contact is mandatory");
 
                 contact = value;
             }
         }
 
-        public int CountryId
+        public Country Country
         {
             get
             {
-                return countryId;
+                Debug.Assert(!Equals(country, null));
+                return country;
             }
             set
             {
-                int oldValue = countryId;
-                try
-                {
-                    countryId = value;
-                }
-                catch
-                {
-                    countryId = oldValue;
-                    //throw;
-                }
+                if (Equals(value, null))
+                    throw new ArgumentNullException("Country", "Valid country is mandatory");
+
+                country = value;
             }
         }
 

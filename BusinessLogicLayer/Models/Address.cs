@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Phonebook.BusinessLogicLayer.Models
 {
@@ -12,19 +8,19 @@ namespace Phonebook.BusinessLogicLayer.Models
         private string city;
         private string street;
         private int houseNo;
-        private int contactId;
-        private int countryId;
+        private Contact contact;
+        private Country country;
 
         public Address() { }
-        public Address(string city, string street, int houseNo, int contactId, int countryId, string zipCode = null, int? typeId = null)
+        public Address(string city, string street, int houseNo, Contact contact, Country country, string zipCode = null, AddressType type = null)
         {
             City = city;
             Street = street;
             HouseNo = houseNo;
-            ContactId = contactId;
-            CountryId = countryId;
+            Contact = contact;
+            Country = country;
             ZipCode = zipCode;
-            TypeId = typeId;
+            AddressType = type;
         }
 
         public int Id { get; set; }
@@ -50,7 +46,6 @@ namespace Phonebook.BusinessLogicLayer.Models
                 catch
                 {
                     city = oldValue;
-                    //throw;
                 }
             }
         }
@@ -102,52 +97,41 @@ namespace Phonebook.BusinessLogicLayer.Models
             }
         }
 
-        public int ContactId
+        public Contact Contact
         {
             get
             {
-                return contactId;
+                Debug.Assert(!Equals(contact, null));
+                return contact;
             }
             set
             {
-                int oldValue = contactId;
-                try
-                {
-                    contactId = value;
-                }
-                catch
-                {
-                    contactId = oldValue;
-                    //throw;
-                }
+                if (Equals(value, null))
+                    throw new ArgumentNullException("Contact", "Valid contact is mandatory");
+
+                contact = value;
             }
         }
 
-        public int CountryId
+        public Country Country
         {
             get
             {
-                return countryId;
+                Debug.Assert(!Equals(country, null));
+                return country;
             }
             set
             {
-                int oldValue = countryId;
-                try
-                {
-                    countryId = value;
-                }
-                catch
-                {
-                    countryId = oldValue;
-                    //throw;
-                }
+                if (Equals(value, null))
+                    throw new ArgumentNullException("Country", "Valid country is mandatory");
+
+                country = value;
             }
         }
 
         public string ZipCode { get; set; }
 
-        public int? TypeId { get; set; }
-
+        public AddressType AddressType { get; set; }
 
     }
 }

@@ -16,16 +16,20 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator Country(CountryModel cm)
         {
-            Country country = new Country(cm.Name, cm.PhonePrefix);
-            country.Id = cm.Id;
+            Country country = new Country(cm.Name, cm.PhonePrefix)
+            {
+                Id = cm.Id
+            };
 
             return country;
         }
 
         public static implicit operator CountryModel(Country c)
         {
-            CountryModel country = new CountryModel(c.Name, c.PhonePrefix);
-            country.Id = c.Id;
+            CountryModel country = new CountryModel(c.Name, c.PhonePrefix)
+            {
+                Id = c.Id
+            };
 
             return country;
         }

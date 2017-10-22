@@ -73,6 +73,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
                                                        "SET  Name = @Name, PhonePrefix = @PhonePrefix " +
                                                        "WHERE Id = @Id", connection))
             {
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = country.Id;
                 command.Parameters.Add("@Name", SqlDbType.NVarChar).Value = country.Name;
                 command.Parameters.Add("@PhonePrefix", SqlDbType.NVarChar).Value = country.PhonePrefix;
 

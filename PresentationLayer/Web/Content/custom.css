@@ -1,10 +1,18 @@
-﻿hr{
-    clear:both;
+﻿hr {
+    clear: both;
 }
+a:hover{
+    text-decoration:none !important;
+}
+
 .separator {
-    margin-top:50px;
+    margin-top: 50px;
 }
+
 .tableHeaderContainer {
+    display:table;
+    table-layout:fixed;
+    width:100%;
     background: #ccc;
     background: -webkit-linear-gradient(#eee, #ccc);
     background: -o-linear-gradient(#eee, #ccc);
@@ -12,118 +20,175 @@
     background: linear-gradient(#eee, #ccc);
     height: 40px;
     line-height: 40px;
-    padding-left: 30px;
     cursor: default;
     font-weight: bold;
 }
-.tableHeader,.tableColl{
-    float:left;
-    width:30%;
+
+.tableHeaderContainer > div{
+    display:table-cell;
+    padding-left:20px;
 }
+
 .tableContainer {
-    font-size:17px;
+    display: table;
+    table-layout: fixed;
+    width:100%;
+    font-size: 17px;
     background-color: #eee;
     height: 60px;
-    line-height: 58px;
     padding-left: 30px;
     cursor: pointer;
     transition: 0.3s background-color, color;
 }
+
 .tableContainer:hover {
     background-color: rgba(135, 206, 250, 0.5);
     color: black;
 }
-.picture-col{
-    width:100px;
+.tableContainer > div {
+    display: table-cell;
+    vertical-align: middle;
 }
+
+.picture-col {
+    width: 100px;
+}
+
 .add-another {
     color: green;
     line-height: 40px;
     height: 40px;
-    width:50px;
+    width: 50px;
     cursor: pointer;
     margin-left: 20px;
 }
-.nav-bar{
-    margin-top:20px;
-    margin-bottom:20px;
-}
-.odabij{
-    margin-top:10px;
-    margin-bottom:10px !important;
-}
-.basic-info{
-    width:500px;
-    margin-left:50px;
-    float:left;
-}
-.profile-pic {
-    background-image: url('images/default-profile-picture.png');
-    background-size: 100%;
-    height: 220px;
+
+.nav-bar {
+    margin-top: 20px;
     margin-bottom: 20px;
-    width: 220px;
+}
+
+.odabij {
+    margin-top: 10px;
+    margin-bottom: 10px !important;
+}
+
+.basic-info {
+    width: 500px;
+    margin-left: 50px;
     float: left;
 }
-.display-title{
-    text-align:right;
-    width:200px;
-    float:left;
-    font-size:30px;
-    font-weight:bold;
-    margin-right:40px;
+.profile-container {
+    position: relative;
+    float: left;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    margin-bottom: 20px;
 }
+
+.profile-pic {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    width: 220px;
+    height: 220px;
+    background: white;
+    background-size: 100%;
+    border: 3px solid #ccc;
+    float: left;
+    cursor:pointer;
+}
+.change-pic {
+    pointer-events: none;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 95px;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.profile-container:hover .change-pic{
+    opacity:0.7;
+}
+
+.save-contact{
+    clear:both;
+}
+
+.display-title {
+    text-align: right;
+    width: 200px;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
 .display-info {
     width: 250px;
     float: left;
     font-size: 30px;
 }
-.new-table{
-    clear:both;
+
+.new-table {
+    clear: both;
 }
+
 .info-table {
+    width:100%;
+    display: table;
+    table-layout: fixed;
     line-height: 28px;
-    background-color:#eee;
+    background-color: #eee;
     border: 1px;
     border-bottom: 0;
     border-style: solid;
     border-color: #ccc;
     height: 40px;
-    cursor:pointer;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
-.info-table > div:first-child{
-    border:0;
+
+.info-table > div:first-child {
+    border: 0;
 }
-.info-table > div{
-    text-align:center;
-    float:left;
-    width:30%;
-    height:100%;
-    padding-left:20px;
-    padding-right:20px;
-    padding-top:5px;
-    border-left:1px;
-    border-left-style:solid;
-    border-left-color:#ccc;
+
+.info-table > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-left: 1px;
+    border-left-style: solid;
+    border-left-color: #ccc;
 }
+
 .info-table input[type="email"] {
     padding-left: 10px;
-    background-color:rgba(0,0,0,0);
-    cursor:pointer;
+    background-color: rgba(0,0,0,0);
+    cursor: pointer;
     transition: background-color 0.3s;
 }
-.info-table .btn{
-    margin-top:5px;
-    float:left;
-    margin-left:30px;
+
+.info-table .btn {
+    margin-right: 20px;
 }
+
 .info-table:hover {
     background-color: rgba(135, 206, 250, 0.5);
 }
+
 .info-table:hover input[type="email"] {
-    color:black;
+    color: black;
 }
+
 .profile-picture-container {
     border-radius: 50%;
     behavior: url(PIE.htc);
@@ -131,50 +196,160 @@
     height: 50px;
     margin-top: 5px;
     background: white;
-    background-image: url('images/default-profile-picture.png');
     background-size: 100%;
     border: 3px solid #ccc;
 }
-.no-borders{
-    border:0;
+.default-pic {
+    background-image: url('images/default-profile-picture.png');
 }
+
+.no-borders {
+    cursor: pointer;
+    border: 0;
+    background-color: rgba(0,0,0,0);
+}
+
 .no-borders-drop {
-    background-color:rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
     border: 0;
     height: 30px;
-    width: 150px;
-    cursor:pointer;
+    cursor: pointer;
 }
-.no-borders-drop:hover{
-    color:black;
+
+.no-borders-drop:hover {
+    color: black;
 }
-.add-email{
-    display:none;
+
+.add-email, .add-phone {
+    display: table;
 }
-input:focus{
-    outline:none;
+
+input:focus {
+    outline: none;
 }
-select:focus{
-    outline:none;
+
+select:focus {
+    outline: none;
 }
+
 button:focus {
     outline: 0 !important;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-/*.email-info2 {
-    padding-left: 30px;
-    margin-left: 40px;
-    border: 0px;
-    border-left: 1px;
-    border-style: solid;
-    border-color: #ccc;
-}
-.email-info div {
+.floatLeft {
     float: left;
 }
-.email-info-last {
-    border: 1px;
-    border-style: solid;
-    border-color: #ccc;
-}*/
+.houseNo{
+    margin-left:10px;
+    width:50px;
+}
+.houseNoDiv{
+    width:85px;
+}
+.zipCode {
+    width: 80px;
+}
+.zipCodeDiv{
+    width:110px;
+}
+.address {
+    width: 100px;
+    margin-right: 10px;
+}
+.addressDiv {
+    width: 220px;
+}
+.city{
+    width:150px;
+}
+.cityDiv{
+    width:170px;
+}
+.countriesDiv,.addressTypeDiv{
+    width:150px;
+}
+.add-address,.add-email,.add-phone {
+    background-color:rgba(0,128,0,0.15);
+}
+@media screen and (max-width:995px){
+    .new-table input{
+        text-align:center;
+    }
+    .phone{
+        width:100px;
+    }
+    .profile-container{
+        float:none;
+        margin:auto;
+    }
+    .basic-info{
+        margin-left:auto;
+        margin:auto;
+        float:none;
+    }
+    .info-table > div{
+        padding:10px;
+    }
+    .addressDiv{
+        width:auto;
+    }
+    .address{
+        margin:auto;
+        float:none;
+    }
+    .houseNo{
+        float:none;
+        width:30px;
+        clear:both;
+        margin:auto;
+    }
+    .info-table .btn{
+        margin:0;
+    }
+    .tableHeaderContainer > div{
+        padding-left:0;
+        text-align:center;
+        vertical-align:middle;
+    }
+    .info-table .merge{
+        float:none;
+        display:block;
+        height:50px;
+        width:auto;
+    }
+    .tableHeaderContainer .merge {
+        float: none;
+        display: block;
+        height: 50px;
+        width: auto;
+        margin: auto;
+    }
+    .cityDiv{
+        width:auto;
+    }
+    .city{
+        width:100px;
+    }
+    .sepline{
+        display:none;
+    }
+}
+@media screen and (max-width:650px){
+    .tableHeaderContainer{
+        display:none;
+    }
+    .info-table {
+        width: 100%;
+    }
+    .info-table > div {
+        display:table-row;
+    }
+    .info-table input[type="email"] {
+        width: 140px;
+        padding:0;
+    }
+    .display-title,.display-info{
+        font-size:20px;
+    }
+}

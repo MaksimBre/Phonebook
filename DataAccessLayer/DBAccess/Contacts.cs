@@ -115,15 +115,12 @@ namespace Phonebook.DataAccessLayer.DBAccess
             }
         }
 
-        public void Delete(Contact contact)
+        public void Delete(int id)
         {
-            if (contact == null)
-                throw new ArgumentNullException("contact", "Valid contact is mandatory!");
-
             using (SqlCommand command = new SqlCommand("DELETE FROM Contacts " +
                                                        "WHERE Id = @Id ", connection))
             {
-                command.Parameters.Add("@Id", SqlDbType.Int).Value = contact.Id;
+                command.Parameters.Add("@Id", SqlDbType.Int).Value = id;
 
                 command.ExecuteNonQuery();
             }

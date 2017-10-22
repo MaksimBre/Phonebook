@@ -3,8 +3,6 @@ using Phonebook.BusinessLogicLayer.Managers.Properties;
 using Phonebook.BusinessLogicLayer.Models;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Diagnostics;
 
 namespace Phonebook.BusinessLogicLayer.Managers
@@ -49,7 +47,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
                 return null;
             Debug.Assert(dbPhone.ContactId == contact.Id);
 
-            Phone phone = new Phone(dbPhone.Number, contact, dbPhone.CountryId, dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null)
+            Phone phone = new Phone(dbPhone.Number, contact, new Countries().GetById(dbPhone.CountryId), dbPhone.TypeId.HasValue ? new PhoneTypes().GetById(dbPhone.TypeId.Value) : null)
             {
                 Id = dbPhone.Id
             };
@@ -62,7 +60,7 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (phone == null)
                 throw new ArgumentNullException("phone", "Valid phone is mandatory!");
 
-            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.Contact.Id, phone.CountryId, phone.PhoneType?.Id);
+            return new DataAccessLayer.Models.Phone(phone.Id, phone.Number, phone.Contact.Id, phone.Country.Id, phone.PhoneType?.Id);
         }
     }
 }

@@ -72,7 +72,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
             if (phone == null)
                 throw new ArgumentNullException("phone", "Valid phone is mandatory!");
 
-            using (SqlCommand command = new SqlCommand("UPDATE Phone " +
+            using (SqlCommand command = new SqlCommand("UPDATE Phones " +
                                                        "SET  Number = @Number, TypeId = @TypeId, ContactId = @ContactId, CountryId = @CountryId " +
                                                        "WHERE Id = @Id", connection))
             {

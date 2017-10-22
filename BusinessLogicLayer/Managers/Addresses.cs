@@ -10,13 +10,13 @@ namespace Phonebook.BusinessLogicLayer.Managers
 {
     public class Addresses
     {
-        public Address GetById(int id)
+        /*public Address GetById(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
                 return Map(phonebook.Addresses.GetById(id));
             }
-        }
+        }*/
 
         public IEnumerable<Address> GetAllByContact(Contact contact)
         {
@@ -43,11 +43,11 @@ namespace Phonebook.BusinessLogicLayer.Managers
             }
         }
 
-        public void Delete(Address address)
+        public void Delete(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                phonebook.Addresses.Delete(Map(address));
+                phonebook.Addresses.Delete(id);
             }
         }
 
@@ -59,13 +59,13 @@ namespace Phonebook.BusinessLogicLayer.Managers
             if (contact == null)
                 return null;
 
-            Address address = new Address(dbAddress.City, dbAddress.Street, dbAddress.HouseNo, contact.Id, dbAddress.CountryId, dbAddress.ZipCode, dbAddress.TypeId);
+            Address address = new Address(dbAddress.City, dbAddress.Street, dbAddress.HouseNo, contact, new Countries().GetById(dbAddress.CountryId), dbAddress.ZipCode, dbAddress.TypeId.HasValue ? new AddressTypes().GetById(dbAddress.TypeId.Value) : null);
             address.Id = dbAddress.Id;
 
             return address;
         }
 
-        private Address Map(DataAccessLayer.Models.Address dbAddress)
+        /*private Address Map(DataAccessLayer.Models.Address dbAddress)
         {
             if (dbAddress == null)
                 return null;
@@ -74,14 +74,14 @@ namespace Phonebook.BusinessLogicLayer.Managers
             address.Id = dbAddress.Id;
 
             return address;
-        }
+        }*/
 
         private DataAccessLayer.Models.Address Map(Address address)
         {
             if (address == null)
                 throw new ArgumentNullException("address", "Valid address is mandatory!");
 
-            return new DataAccessLayer.Models.Address(address.Id, address.City, address.ZipCode, address.Street, address.HouseNo, address.ContactId, address.CountryId, address.TypeId);
+            return new DataAccessLayer.Models.Address(address.Id, address.City, address.ZipCode, address.Street, address.HouseNo, address.Contact.Id, address.Country.Id, address.AddressType.Id);
         }
     }
 }

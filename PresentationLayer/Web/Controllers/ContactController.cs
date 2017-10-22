@@ -2,7 +2,9 @@
 using Phonebook.BusinessLogicLayer.Models;
 using Phonebook.PresentationLayer.Web.Models;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Web;
 using System.Web.Mvc;
 
 namespace Phonebook.PresentationLayer.Web.Controllers
@@ -12,6 +14,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         private readonly Contacts ContactManager = new Contacts();
         private readonly Emails EmailManager = new Emails();
         private readonly Phones PhoneManager = new Phones();
+        private readonly Addresses AddressManager = new Addresses();
 
         public ActionResult Index()
         {
@@ -33,15 +36,15 @@ namespace Phonebook.PresentationLayer.Web.Controllers
 
                 IEnumerable<PhoneModel> phones = PhoneManager.GetAllByContact(contact).Select(x => (PhoneModel)x);
                 IEnumerable<EmailModel> emails = EmailManager.GetAllByContact(contact).Select(x => (EmailModel)x);
+                IEnumerable<AddressModel> addresses = AddressManager.GetAllByContact(contact).Select(x => (AddressModel)x);
 
                 ContactDetailsModel model = new ContactDetailsModel()
                 {
                     Contact = contact,
                     EmailList = emails,
-                    PhoneList = phones
+                    PhoneList = phones,
+                    AddressList = addresses
                 };
-                //contactModel.Emails = EmailManager.GetByContact(contactModel);
-                //model.Phones = PhoneManager.GetAllByContact(model);
 
                 return View(model);
             }
@@ -49,18 +52,19 @@ namespace Phonebook.PresentationLayer.Web.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult Edit(int id)
-        {
-            ContactModel model = ContactManager.GetById(id);
-            return View(model);
-        }
-
         [HttpPost]
-        public ActionResult Edit(ContactModel contactModel)
+        public ActionResult Edit(ContactModel contactModel, HttpPostedFileBase file)
         {
+
+            if (file != null)
+            {
+                contactModel.Picture = new byte[file.ContentLength];
+                file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+            }
+
             ContactManager.Save(contactModel);
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Details", "Contact", new { @id = contactModel.Id });
         }
 
         public ActionResult Create()
@@ -69,22 +73,21 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(ContactModel contactModel)
+        public ActionResult Create(ContactModel contactModel, HttpPostedFileBase file)
         {
+            if (file != null)
+            {
+                contactModel.Picture = new byte[file.ContentLength];
+                file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+            }
             ContactManager.Add(contactModel);
             return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult Delete(ContactModel contactModel)
+        public ActionResult Delete(int id)
         {
-            ContactManager.Delete(contactModel);
+            ContactManager.Delete(id);
             return RedirectToAction("Index", "Home");
         }
-
-        /*public ActionResult DeletePhone(PhoneModel phoneModel)
-        {
-            PhoneManager.Delete(phoneModel);
-            return RedirectToAction("Index", "Home");
-        }*/
     }
 }

@@ -49,11 +49,11 @@ namespace Phonebook.BusinessLogicLayer.Managers
             }
         }
 
-        public void Delete(Contact contact)
+        public void Delete(int id)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                phonebook.Contacts.Delete(Map(contact));
+                phonebook.Contacts.Delete(id);
             }
         }
 

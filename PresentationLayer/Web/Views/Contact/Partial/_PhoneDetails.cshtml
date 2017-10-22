@@ -3,11 +3,11 @@
 
 @using (Html.BeginForm("SavePhone", "PhoneDetails", FormMethod.Post))
 {
-    Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
+    Model.ParseIds = Model.Id + "/" + Model.Contact.Id + "/" + Model.Country.Id;
     @Html.HiddenFor(x => Model.ParseIds)
     <div class="info-table">
         <div>
-            @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders" } })
+            @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders phone" } })
             @Html.ValidationMessageFor(x => x.Number)
         </div>
         <div>
@@ -18,6 +18,14 @@
             @Html.DropDownListFor(x => x.PhoneType.Id, new SelectList(phoneTypes, "Id", "Name", Model.PhoneType.Id), new { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.PhoneType.Name)
         </div>
+        <div>
+            @{
+                Countries countriesManager = new Countries();
+                IEnumerable<CountryModel> countries = countriesManager.GetAll().Select(x => (CountryModel)x);
+            }
+            @Html.DropDownListFor(x => x.Country.Id, new SelectList(countries, "Id", "Name", Model.Country.Id), new { @class = "no-borders-drop" })
+            @Html.ValidationMessageFor(x => x.Country.Name)
+        </div>
         <div><input type="submit" value="Save" class="btn btn-success btn-xs add-email-button">@Html.ActionLink("Delete", "DeletePhone", "PhoneDetails", new { @id = Model.Id, @contactId = Model.Contact.Id }, new { @class = "btn btn-danger btn-xs delete-button" })</div>
     </div>
-                }
+}

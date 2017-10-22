@@ -3,9 +3,9 @@
 
 @using (Html.BeginForm("AddPhone", "PhoneDetails", FormMethod.Post))
 {
-    Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
+    Model.ParseIds = Model.Id + "/" + Model.Contact.Id + "/" + Model.Country.Id;
     @Html.HiddenFor(x => Model.ParseIds)
-    <div class="info-table add-phone">
+    <div class="info-table add-phone" style="display:none;">
         <div>
             @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders" } })
             @Html.ValidationMessageFor(x => x.Number)
@@ -18,11 +18,18 @@
             @Html.DropDownListFor(x => x.PhoneType.Id, new SelectList(phoneTypes, "Id", "Name", Model.PhoneType.Id), new { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.PhoneType.Name)
         </div>
-
+        <div>
+            @{
+                Countries countriesManager = new Countries();
+                IEnumerable<CountryModel> countries = countriesManager.GetAll().Select(x => (CountryModel)x);
+            }
+            @Html.DropDownListFor(x => x.Country.Id, new SelectList(countries, "Id", "Name", Model.Country.Id), new { @class = "no-borders-drop" })
+            @Html.ValidationMessageFor(x => x.Country.Name)
+        </div>
         <div>
             <input type="submit" value="Save" class="btn btn-success btn-xs">
         </div>
 
     </div>
-    <button type="button" class="btn btn-block btn-default add-email-button">Add new phone</button>
+    <button type="button" class="btn btn-block btn-default add-phone-button">Add new phone</button>
                 }

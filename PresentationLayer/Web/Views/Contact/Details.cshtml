@@ -7,24 +7,30 @@
     @Html.Partial("Partial/_PartialDetails", Model.Contact)
     <hr />
     <div class="new-table">
-        <div class="tableHeaderContainer"><div class="tableHeader">Emails</div><div class="tableHeader">Email type</div><div class="tableHeader">Controls</div></div>
+        <div class="tableHeaderContainer"><div>Emails</div><div>Email type</div><div>Controls</div></div>
         @foreach (var email in Model.EmailList)
         {
             Html.RenderPartial("Partial/_EmailDetails", email);
         }
-        @Html.Partial("Partial/_EmailAdd", new EmailModel(){Contact = Model.Contact})
+        @Html.Partial("Partial/_EmailAdd", new EmailModel(){ Contact = Model.Contact})
     </div>
     <hr />
-
-
-
     <div class="new-table">
-        <div class="tableHeaderContainer"><div class="tableHeader">Phones</div><div class="tableHeader">Phone type</div><div class="tableHeader">Controls</div></div>
+        <div class="tableHeaderContainer"><div>Phones</div><div>Phone type</div><div>Country</div><div>Controls</div></div>
         @foreach (var phone in Model.PhoneList)
         {
             Html.RenderPartial("Partial/_PhoneDetails", phone);
         }  
         @Html.Partial("Partial/_PhoneAdd", new PhoneModel() { Contact = Model.Contact })
+    </div>
+    <hr />
+    <div class="new-table">
+        <div class="tableHeaderContainer"><div class="addressDiv">Address</div><div class="cityDiv">City</div><div class="zipCodeDiv">Zip Code</div><div class="countriesDiv merge">Country</div><div class="addressTypeDiv merge">Address type</div><div>Controls</div></div>
+        @foreach (var address in Model.AddressList)
+        {
+            Html.RenderPartial("Partial/_AddressDetails", address);
+        }
+        @Html.Partial("Partial/_AddressAdd", new AddressModel() { Contact = Model.Contact })
     </div>
     <hr />
 </div>

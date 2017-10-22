@@ -142,6 +142,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AddressDetailsController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\EmailDetailsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -149,6 +150,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\AddressModel.cs" />
+    <Compile Include="Models\AddressTypeModel.cs" />
     <Compile Include="Models\ContactDetailsModel.cs" />
     <Compile Include="Models\ContactModel.cs" />
     <Compile Include="Models\CountryModel.cs" />
@@ -295,8 +298,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Contact\Details.cshtml" />
     <Content Include="Views\Contact\Partial\_EmailDetails.cshtml" />
@@ -306,9 +307,12 @@
     <Content Include="Views\Contact\Partial\_EmailAdd.cshtml" />
     <Content Include="Views\Contact\Partial\_PhoneDetails.cshtml" />
     <Content Include="Views\Contact\Partial\_PhoneAdd.cshtml" />
+    <Content Include="Views\Contact\Partial\_AddressDetails.cshtml" />
+    <Content Include="Views\Contact\Partial\_AddressAdd.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\AddressDetails\" />
     <Folder Include="Views\PhoneDetails\" />
   </ItemGroup>
   <ItemGroup>
