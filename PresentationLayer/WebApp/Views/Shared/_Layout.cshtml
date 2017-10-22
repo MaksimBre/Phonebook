@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/custom.css")
+    @Styles.Render("~/Content/bootstrap-theme.css")
+
+</head>
+<body>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Dragan Ilic Mors &hearts;</p>
+        </footer>
+    </div>
+    <script src="~/Scripts/jquery-3.2.1.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        $(function () {
+            $('.add-email-button').click(function () {
+                $('.add-email').toggle();
+            });
+        });
+        $(function () {
+            $('.add-phone-button').click(function () {
+                $('.add-phone').toggle();
+            });
+        });
+        $(function () {
+            $('.add-address-button').click(function () {
+                $('.add-address').toggle();
+            });
+        });
+        $(function () {
+            $('.delete-button').click(function () {
+                return confirm("Are you sure you want to delete?");
+            });
+        });
+    </script>
+</body>
+</html>

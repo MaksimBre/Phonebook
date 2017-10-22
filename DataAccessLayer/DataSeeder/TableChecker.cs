@@ -37,7 +37,7 @@ namespace Phonebook.DataAccessLayer.DataSeeder
             delete.Id = phonebook.Contacts.Insert(delete);
 
             phonebook.Contacts.Update(update);
-            phonebook.Contacts.Delete(delete);
+            phonebook.Contacts.Delete(delete.Id);
 
             CheckEmailTable(phonebook.Emails, update, CheckEmailTypesTable(phonebook.EmailTypes));
         }
@@ -191,7 +191,7 @@ namespace Phonebook.DataAccessLayer.DataSeeder
 
             };
             ctemp.Id = phonebook.Contacts.Insert(ctemp);
-            phonebook.Contacts.Delete(ctemp);
+            phonebook.Contacts.Delete(ctemp.Id);
 
             contact3.Name = "Dragan Ilic";
             contact3.DateOfBirth = new DateTime(1993,10,30);
