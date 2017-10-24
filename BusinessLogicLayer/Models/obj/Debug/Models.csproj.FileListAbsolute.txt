@@ -38,3 +38,4 @@ C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\BusinessLogicLayer\M
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\BusinessLogicLayer\Models\obj\Debug\Phonebook.BusinessLogicLayer.Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\BusinessLogicLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache

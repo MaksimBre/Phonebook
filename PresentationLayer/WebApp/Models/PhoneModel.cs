@@ -1,4 +1,5 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Phonebook.PresentationLayer.Web.Models
 {

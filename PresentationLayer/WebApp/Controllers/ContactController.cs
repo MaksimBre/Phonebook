@@ -2,7 +2,6 @@
 using Phonebook.BusinessLogicLayer.Models;
 using Phonebook.PresentationLayer.Web.Models;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -55,11 +54,18 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult Edit(ContactModel contactModel, HttpPostedFileBase file)
         {
-
             if (file != null)
             {
-                contactModel.Picture = new byte[file.ContentLength];
-                file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+                if (file.ContentLength > 0 && file.ContentType == "image/jpeg")
+                {
+                    contactModel.Picture = new byte[file.ContentLength];
+                    file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+                }
+            }
+            else
+            {
+                ContactModel tempContact = ContactManager.GetById(contactModel.Id);
+                contactModel.Picture = tempContact.Picture;
             }
 
             ContactManager.Save(contactModel);
@@ -77,8 +83,11 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         {
             if (file != null)
             {
-                contactModel.Picture = new byte[file.ContentLength];
-                file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+                if (file.ContentLength > 0 && file.ContentType == "image/jpeg")
+                {
+                    contactModel.Picture = new byte[file.ContentLength];
+                    file.InputStream.Read(contactModel.Picture, 0, file.ContentLength);
+                }
             }
             ContactManager.Add(contactModel);
             return RedirectToAction("Index", "Home");

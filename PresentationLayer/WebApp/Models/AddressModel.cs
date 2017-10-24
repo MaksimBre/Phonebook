@@ -1,4 +1,5 @@
 ﻿using Phonebook.BusinessLogicLayer.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace Phonebook.PresentationLayer.Web.Models
 {
@@ -22,11 +23,16 @@ namespace Phonebook.PresentationLayer.Web.Models
         }
 
         public int Id { get; set; }
+
+        [Required]
         public string City { get; set; }
+        [Required]
         public string Street { get; set; }
+        [Required]
         public int HouseNo { get; set; }
         public ContactModel Contact { get; set; }
         public CountryModel Country { get; set; }
+        [Required]
         public string ZipCode { get; set; }
         public AddressTypeModel AddressType { get; set; }
         public string ParseIds { get; set; }

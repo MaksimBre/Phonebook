@@ -3,20 +3,22 @@
 
 @using (Html.BeginForm("AddEmail", "EmailDetails", FormMethod.Post))
 {
+    @Html.AntiForgeryToken()
+
     Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
     @Html.HiddenFor(x => Model.ParseIds)
     <div class="info-table add-email" style="display:none;">
         <div>
-            @Html.EditorFor(x => x.EmailAddress, new { htmlAttributes = new { @class = "no-borders" } })
+            @Html.EditorFor(x => x.EmailAddress, new { htmlAttributes = new { @class = "no-borders", required = "required" } })
             @Html.ValidationMessageFor(x => x.EmailAddress)
         </div>
         <div>
             @{
                 EmailTypes emailTypesManager = new EmailTypes();
                 IEnumerable<EmailTypeModel> emailTypes = emailTypesManager.GetAll().Select(x => (EmailTypeModel)x);
+                var list = new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id);
             }
-            @Html.DropDownListFor(x => x.EmailType.Id, new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id), new { @class = "no-borders-drop" })
-            @Html.ValidationMessageFor(x => x.EmailType.Name)
+            @Html.DropDownListFor(x => x.EmailType.Id, list,"None" , new { @class = "no-borders-drop" })
         </div>
 
         <div>

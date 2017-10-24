@@ -3,19 +3,22 @@
 
 @using (Html.BeginForm("SaveEmail", "EmailDetails", FormMethod.Post))
 {
+    @Html.AntiForgeryToken()
+
     Model.ParseIds = Model.Id + "/" + Model.Contact.Id;
     @Html.HiddenFor(x => Model.ParseIds)
     <div class="info-table">
         <div>
-            @Html.EditorFor(x => x.EmailAddress, new { htmlAttributes = new { @class = "no-borders" } })
+            @Html.EditorFor(x => x.EmailAddress, new { htmlAttributes = new { @class = "no-borders", required = "required" } })
             @Html.ValidationMessageFor(x => x.EmailAddress)
         </div>
         <div>
             @{
                 EmailTypes emailTypesManager = new EmailTypes();
                 IEnumerable<EmailTypeModel> emailTypes = emailTypesManager.GetAll().Select(x => (EmailTypeModel)x);
+                var emailTypesList = new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id);
             }
-            @Html.DropDownListFor(x => x.EmailType.Id, new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id), new  { @class = "no-borders-drop" })
+            @Html.DropDownListFor(x => x.EmailType.Id, emailTypesList, "None", new  { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.EmailType.Name)
         </div>
         <div><input type="submit" value="Save" class="btn btn-success btn-xs add-email-button">@Html.ActionLink("Delete", "DeleteEmail", "EmailDetails", new { @id = Model.Id, @contactId = Model.Contact.Id }, new { @class = "btn btn-danger btn-xs delete-button" })</div>

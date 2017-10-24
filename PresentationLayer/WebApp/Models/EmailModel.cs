@@ -19,10 +19,11 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public int Id { get; set; }
         public ContactModel Contact { get; set; }
-        [Display(Name = "Email address")]
-        [Required(ErrorMessage = "The email address is required")]
+
+        [Required]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string EmailAddress { get; set; }
+
         public EmailTypeModel EmailType { get; set; }
         public string ParseIds { get; set; }
 

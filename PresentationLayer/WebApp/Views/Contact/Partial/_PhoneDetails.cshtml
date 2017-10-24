@@ -3,11 +3,13 @@
 
 @using (Html.BeginForm("SavePhone", "PhoneDetails", FormMethod.Post))
 {
+    @Html.AntiForgeryToken()
+
     Model.ParseIds = Model.Id + "/" + Model.Contact.Id + "/" + Model.Country.Id;
     @Html.HiddenFor(x => Model.ParseIds)
     <div class="info-table">
         <div>
-            @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders phone" } })
+            @Html.EditorFor(x => x.Number, new { htmlAttributes = new { @class = "no-borders phone", required = "required", min = "10" } })
             @Html.ValidationMessageFor(x => x.Number)
         </div>
         <div>

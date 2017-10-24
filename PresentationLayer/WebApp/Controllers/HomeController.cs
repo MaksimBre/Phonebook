@@ -18,27 +18,5 @@ namespace Web.Controllers
             
             return View(model);
         }
-
-        [HttpPost]
-        public ActionResult SavePhoneType(PhoneTypeModel model)
-        {
-            PhoneTypeManager.Save(model);
-
-            return RedirectToAction("Index");
-        }
-
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
     }
 }

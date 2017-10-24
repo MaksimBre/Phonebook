@@ -2,6 +2,8 @@
 
 @using (Html.BeginForm("Edit", "Contact", FormMethod.Post, new { enctype = "multipart/form-data" }))
 {
+    @Html.AntiForgeryToken()
+
     @Html.HiddenFor(x => Model.Id)
 <div class="profile-container"><div class="change-pic btn btn-primary">Change picture</div>
 @if (Model.Picture == null)
@@ -25,7 +27,7 @@ else
 
     <div class="display-info">
         @Html.EditorFor(model => model.Name,
-     new { htmlAttributes = new { @class = "no-borders" } })
+     new { htmlAttributes = new { @class = "no-borders", required = "required" } })
         @Html.ValidationMessageFor(model => model.Name)
     </div>
 

@@ -29,3 +29,4 @@ C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\DataAccessLayer\Mode
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\DataAccessLayer\Models\obj\Debug\Models.csproj.CoreCompileInputs.cache
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.dll
 C:\Users\Morsus\Documents\GIT\Phonebook\Phonebook\phonebook\DataAccessLayer\Models\obj\Debug\Phonebook.DataAccessLayer.Models.pdb
+C:\Users\Morsus\Documents\GIT\Phonebook\phonebook\Phonebook\DataAccessLayer\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
