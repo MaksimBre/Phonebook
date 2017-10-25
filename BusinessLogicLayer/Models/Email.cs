@@ -18,8 +18,9 @@ namespace Phonebook.BusinessLogicLayer.Models
 
         public int Id { get; set; }
         public Contact Contact
-        { get
-            { 
+        {
+            get
+            {
                 Debug.Assert(!Equals(contact, null));
                 return contact;
             }
@@ -35,15 +36,17 @@ namespace Phonebook.BusinessLogicLayer.Models
         {
             get
             {
-                Debug.Assert(!Equals(emailAddress,null));
+                Debug.Assert(!Equals(emailAddress, null));
                 return emailAddress;
             }
             set
-            { if (Equals(value, null))
+            {
+                if (Equals(value, null))
                     throw new ArgumentNullException("EmailAddress", "Valid email address is mandatory");
 
                 emailAddress = value;
-            } }
+            }
+        }
         public EmailType EmailType { get; set; }
     }
 }

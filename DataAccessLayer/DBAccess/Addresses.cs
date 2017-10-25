@@ -108,7 +108,7 @@ namespace Phonebook.DataAccessLayer.DBAccess
 
         private Address CreateAddress(IDataReader reader)
         {
-            return new Address((int)reader["Id"], reader["City"] as string, reader["ZipCode"] as string, reader["Street"] as string, (int)reader["HouseNo"], (int)reader["ContactId"], (int)reader["CountryId"], (int)reader["TypeId"].DBNullTo<int?>());
+            return new Address((int)reader["Id"], reader["City"] as string, reader["ZipCode"] as string, reader["Street"] as string, (int)reader["HouseNo"], (int)reader["ContactId"], (int)reader["CountryId"], reader["TypeId"].DBNullTo<int?>());
         }
     }
 }

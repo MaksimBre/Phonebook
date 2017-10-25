@@ -10,19 +10,10 @@ namespace Phonebook.BusinessLogicLayer.Managers
 {
     public class Addresses
     {
-        /*public Address GetById(int id)
-        {
-            using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
-            {
-                return Map(phonebook.Addresses.GetById(id));
-            }
-        }*/
-
         public IEnumerable<Address> GetAllByContact(Contact contact)
         {
             using (DataAccessLayer.DBAccess.Phonebook phonebook = new DataAccessLayer.DBAccess.Phonebook(Settings.Default.PhonebookDBConnection))
             {
-                //return Map(phonebook.Addresses.GetAllByContact(contact));
                 return phonebook.Addresses.GetAllByContactId(contact.Id).Select(pt => Map(pt, contact));
             }
         }
@@ -65,23 +56,12 @@ namespace Phonebook.BusinessLogicLayer.Managers
             return address;
         }
 
-        /*private Address Map(DataAccessLayer.Models.Address dbAddress)
-        {
-            if (dbAddress == null)
-                return null;
-
-            Address address = new Address(dbAddress.City, dbAddress.Street, dbAddress.HouseNo, dbAddress.ContactId, dbAddress.CountryId, dbAddress.ZipCode, dbAddress.TypeId);
-            address.Id = dbAddress.Id;
-
-            return address;
-        }*/
-
         private DataAccessLayer.Models.Address Map(Address address)
         {
             if (address == null)
                 throw new ArgumentNullException("address", "Valid address is mandatory!");
 
-            return new DataAccessLayer.Models.Address(address.Id, address.City, address.ZipCode, address.Street, address.HouseNo, address.Contact.Id, address.Country.Id, address.AddressType.Id);
+            return new DataAccessLayer.Models.Address(address.Id, address.City, address.ZipCode, address.Street, address.HouseNo, address.Contact.Id, address.Country.Id, address.AddressType?.Id);
         }
     }
 }

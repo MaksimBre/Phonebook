@@ -14,6 +14,9 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator PhoneType(PhoneTypeModel ptm)
         {
+            if (ptm == null)
+                return null;
+
             PhoneType phoneType = new PhoneType(ptm.Name);
             phoneType.Id = ptm.Id;
 
@@ -22,6 +25,9 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator PhoneTypeModel(PhoneType pt)
         {
+            if (pt == null)
+                return null;
+
             PhoneTypeModel phoneType = new PhoneTypeModel(pt.Name);
             phoneType.Id = pt.Id;
 

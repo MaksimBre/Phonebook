@@ -36,11 +36,10 @@
             @{
                 AddressTypes addressTypesManager = new AddressTypes();
                 IEnumerable<AddressTypeModel> addressTypes = addressTypesManager.GetAll().Select(x => (AddressTypeModel)x);
-                var theList = new SelectList(addressTypes, "Id", "Name", Model.AddressType.Id);
-                //TODO Make this work!
+                var addressTypesList = new SelectList(addressTypes, "Id", "Name", Model.AddressType?.Id);
             }
 
-            @Html.DropDownListFor(x => x.AddressType.Id, theList, "None", new { @class = "no-borders-drop" })
+            @Html.DropDownListFor(x => x.AddressType.Id, addressTypesList, "None", new { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.AddressType.Name)
         </div>
         <div><input type="submit" value="Save" class="btn btn-success btn-xs add-email-button">@Html.ActionLink("Delete", "DeleteAddress", "AddressDetails", new { @id = Model.Id, @contactId = Model.Contact.Id }, new { @class = "btn btn-danger btn-xs delete-button" })</div>

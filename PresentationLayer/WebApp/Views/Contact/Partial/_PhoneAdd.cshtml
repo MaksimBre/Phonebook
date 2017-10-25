@@ -16,8 +16,9 @@
             @{
                 PhoneTypes phoneTypesManager = new PhoneTypes();
                 IEnumerable<PhoneTypeModel> phoneTypes = phoneTypesManager.GetAll().Select(x => (PhoneTypeModel)x);
+                var phoneTypesList = new SelectList(phoneTypes, "Id", "Name", Model.PhoneType?.Id);
             }
-            @Html.DropDownListFor(x => x.PhoneType.Id, new SelectList(phoneTypes, "Id", "Name", Model.PhoneType.Id), new { @class = "no-borders-drop" })
+            @Html.DropDownListFor(x => x.PhoneType.Id, phoneTypesList, "None", new { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.PhoneType.Name)
         </div>
         <div>

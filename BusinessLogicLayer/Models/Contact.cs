@@ -43,9 +43,5 @@ namespace Phonebook.BusinessLogicLayer.Models
         }
         public byte[] Picture { get; set; }
         public DateTime? DateOfBirth { get; set; }
-
-        //public IEnumerable<Phone> Phones { get; set; }
-        //public IEnumerable<Address> Addresses { get; set; }
-        //public IEnumerable<Email> Emails { get; set; }
     }
 }

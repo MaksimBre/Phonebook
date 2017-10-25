@@ -14,6 +14,9 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator AddressType(AddressTypeModel atm)
         {
+            if (atm == null)
+                return null;
+
             AddressType addressType = new AddressType(atm.Name);
             addressType.Id = atm.Id;
 
@@ -22,6 +25,9 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator AddressTypeModel(AddressType at)
         {
+            if (at == null)
+                return null;
+
             AddressTypeModel addressType = new AddressTypeModel(at.Name);
             addressType.Id = at.Id;
 

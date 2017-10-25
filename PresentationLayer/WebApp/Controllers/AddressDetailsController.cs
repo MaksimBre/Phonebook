@@ -18,6 +18,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult SaveAddress(AddressModel model)
         {
+            ModelState.Remove("AddressType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
@@ -27,15 +28,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
                 model.Contact = Int32.TryParse(stringedIds[1], out x) ? ContactsManager.GetById(x) : null;
                 model.Country = CountriesManager.GetById(model.Country.Id);
 
-                if (model.AddressType.Id == 0)
-                {
-                    model.AddressType = default(AddressTypeModel);
-                }
-                else
-                {
-                    model.AddressType = AddressTypesManager.GetById(model.AddressType.Id);
-                }
-
+                model.AddressType = model.AddressType.Id != 0 ? AddressTypesManager.GetById(model.AddressType.Id) : null;
                 if (model.Contact != null)
                 {
                     AddresssManager.Save(model);
@@ -47,6 +40,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult AddAddress(AddressModel model)
         {
+            ModelState.Remove("AddressType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
@@ -56,7 +50,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
                 model.Contact = Int32.TryParse(stringedIds[1], out x) ? ContactsManager.GetById(x) : null;
                 model.Country = CountriesManager.GetById(model.Country.Id);
 
-                model.AddressType = AddressTypesManager.GetById(model.AddressType.Id);
+                model.AddressType = model.AddressType.Id != 0 ? AddressTypesManager.GetById(model.AddressType.Id) : null;
 
                 if (model.Contact != null)
                 {

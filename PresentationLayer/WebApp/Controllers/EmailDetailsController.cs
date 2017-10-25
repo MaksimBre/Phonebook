@@ -37,6 +37,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult AddEmail(EmailModel model)
         {
+            ModelState.Remove("EmailType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
@@ -45,7 +46,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
                 model.Id = Int32.TryParse(stringedIds[0], out x) ? x : 0;
                 model.Contact = Int32.TryParse(stringedIds[1], out x) ? contactsManager.GetById(x) : null;
 
-                model.EmailType = emailTypesManager.GetById(model.EmailType.Id);
+                model.EmailType = model.EmailType.Id != 0 ? emailTypesManager.GetById(model.EmailType.Id) : null;
 
                 if (model.Contact != null)
                 {

@@ -36,8 +36,9 @@
             @{
                 AddressTypes addressTypesManager = new AddressTypes();
                 IEnumerable<AddressTypeModel> addressTypes = addressTypesManager.GetAll().Select(x => (AddressTypeModel)x);
+                var addressTypesList = new SelectList(addressTypes, "Id", "Name", Model.AddressType?.Id);
             }
-            @Html.DropDownListFor(x => x.AddressType.Id, new SelectList(addressTypes, "Id", "Name", Model.AddressType.Id), new { @class = "no-borders-drop" })
+            @Html.DropDownListFor(x => x.AddressType.Id, addressTypesList, "None", new { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.AddressType.Name)
         </div>
         <div>

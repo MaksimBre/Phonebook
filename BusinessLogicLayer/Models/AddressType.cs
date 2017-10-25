@@ -36,7 +36,6 @@ namespace Phonebook.BusinessLogicLayer.Models
                 catch
                 {
                     name = oldValue;
-                    //throw;
                 }
             }
         }

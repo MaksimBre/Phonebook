@@ -15,6 +15,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult SavePhone(PhoneModel model)
         {
+            ModelState.Remove("PhoneType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
@@ -23,7 +24,8 @@ namespace Phonebook.PresentationLayer.Web.Controllers
                 model.Id = Int32.TryParse(stringedIds[0], out x) ? x : 0;
                 model.Contact = Int32.TryParse(stringedIds[1], out x)? contactsManager.GetById(x) : null;
                 model.Country = countriesManager.GetById(model.Country.Id);
-                model.PhoneType = phoneTypesManager.GetById(model.PhoneType.Id);
+
+                model.PhoneType = model.PhoneType.Id != 0 ? phoneTypesManager.GetById(model.PhoneType.Id) : null;
 
                 if (model.Contact != null)
                 {
@@ -36,6 +38,7 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult AddPhone(PhoneModel model)
         {
+            ModelState.Remove("PhoneType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
@@ -44,7 +47,8 @@ namespace Phonebook.PresentationLayer.Web.Controllers
                 model.Id = Int32.TryParse(stringedIds[0], out x) ? x : 0;
                 model.Contact = Int32.TryParse(stringedIds[1], out x) ? contactsManager.GetById(x) : null;
                 model.Country = countriesManager.GetById(model.Country.Id);
-                model.PhoneType = phoneTypesManager.GetById(model.PhoneType.Id);
+
+                model.PhoneType = model.PhoneType.Id != 0 ? phoneTypesManager.GetById(model.PhoneType.Id) : null;
 
                 if (model.Contact != null)
                 {
