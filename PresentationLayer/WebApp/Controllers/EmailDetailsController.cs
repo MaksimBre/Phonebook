@@ -15,22 +15,23 @@ namespace Phonebook.PresentationLayer.Web.Controllers
         [HttpPost]
         public ActionResult SaveEmail(EmailModel model)
         {
+            ModelState.Remove("EmailType.Id");
             if (ModelState.IsValid)
             {
                 int x = 0;
                 string[] stringedIds = model.ParseIds.Split('/');
 
                 model.Id = Int32.TryParse(stringedIds[0], out x) ? x : 0;
-                model.Contact = Int32.TryParse(stringedIds[1], out x)? contactsManager.GetById(x) : null;
+                model.Contact = Int32.TryParse(stringedIds[1], out x) ? contactsManager.GetById(x) : null;
 
-                model.EmailType = emailTypesManager.GetById(model.EmailType.Id);
+                model.EmailType = model.EmailType.Id != 0 ? emailTypesManager.GetById(model.EmailType.Id) : null;
 
                 if (model.Contact != null)
                 {
                     EmailManager.Save(model);
                 }
             }
-            return RedirectToAction("Details", "Contact",new { @id = model.Contact.Id } );
+            return RedirectToAction("Details", "Contact", new { @id = model.Contact.Id });
         }
 
         [HttpPost]

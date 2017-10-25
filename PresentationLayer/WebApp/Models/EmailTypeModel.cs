@@ -14,11 +14,14 @@ namespace Phonebook.PresentationLayer.Web.Models
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public static implicit operator EmailType(EmailTypeModel et)
+        public static implicit operator EmailType(EmailTypeModel etm)
         {
-            EmailType emailType = new EmailType(et.Name)
+            if (etm == null)
+                return null;
+
+            EmailType emailType = new EmailType(etm.Name)
             {
-                Id = et.Id
+            Id = etm.Id
             };
 
             return emailType;
@@ -26,6 +29,9 @@ namespace Phonebook.PresentationLayer.Web.Models
 
         public static implicit operator EmailTypeModel(EmailType et)
         {
+            if (et == null)
+                return null;
+
             EmailTypeModel emailType = new EmailTypeModel(et.Name)
             {
                 Id = et.Id

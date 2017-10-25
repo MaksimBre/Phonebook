@@ -16,7 +16,7 @@
             @{
                 EmailTypes emailTypesManager = new EmailTypes();
                 IEnumerable<EmailTypeModel> emailTypes = emailTypesManager.GetAll().Select(x => (EmailTypeModel)x);
-                var emailTypesList = new SelectList(emailTypes, "Id", "Name", Model.EmailType.Id);
+                var emailTypesList = new SelectList(emailTypes, "Id", "Name", Model.EmailType?.Id);
             }
             @Html.DropDownListFor(x => x.EmailType.Id, emailTypesList, "None", new  { @class = "no-borders-drop" })
             @Html.ValidationMessageFor(x => x.EmailType.Name)
